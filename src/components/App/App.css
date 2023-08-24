@@ -1,4 +1,8 @@
-
+.App {
+  width: 80vw;
+  display: flex;
+  justify-content: center;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

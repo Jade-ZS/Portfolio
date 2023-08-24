@@ -5,7 +5,7 @@ import NavBar from '../NavBar/NavBar';
 
 function App() {
   return (
-    <div>
+    <div className='App'>
       {<NavBar/ >}
       {/* <Routes>
         <Route element={}/>

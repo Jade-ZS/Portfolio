@@ -1,0 +1,15 @@
+.nav-bar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.right {
+  gap: 2rem;
+  display: flex;
+}
+
+.nav-bar h1 {
+  font-size: 1.5rem;
+}
+
