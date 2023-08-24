@@ -8,8 +8,10 @@ export default function NavBar() {
       <h1 className='name'>Ziyu "Jade" Shi</h1>
       <div className='right'>
         <h1>Home</h1>
-        <h1>About Me</h1>
+        <h1>Skills</h1>
         <h1>Projects</h1>
+        <h1>My Story</h1>
+        <h1>Contact</h1>
       </div>
     </div>
   );
