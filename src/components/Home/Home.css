@@ -1,4 +1,25 @@
-.profile {
-  height: 5rem;
-  border-radius: 20px;
+.home,
+.intro-container,
+.intro-left,
+.contacts-box {
+  display: flex;
 }
+
+.intro-container {
+  justify-content: space-around;
+  align-items: center;
+}
+
+.intro-left {
+  width: 50%;
+  flex-direction: column;
+}
+
+.profile {
+  width: 30%;
+  height: 90%;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+
