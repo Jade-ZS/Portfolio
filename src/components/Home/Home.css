@@ -5,8 +5,12 @@
   display: flex;
 }
 
+.home {
+  flex-direction: column;
+}
+
 .intro-container {
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 

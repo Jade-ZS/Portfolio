@@ -1,0 +1,9 @@
+.project-card {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  align-items: center;
+  background: rgb(202, 202, 201);
+  padding: 5%;
+  border-radius: 20px;
+}
