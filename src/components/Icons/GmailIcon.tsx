@@ -3,7 +3,7 @@ import './Icons.css';
 
 export default function GmailIcon() {
   return (
-    <svg className='icon' width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg className='contact-icon' width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M38.6645 1H11.3355C5.62735 1 1 5.62735 1 11.3355V38.6645C1 44.3726 5.62735 49 11.3355 49H38.6645C44.3726 49 49 44.3726 49 38.6645V11.3355C49 5.62735 44.3726 1 38.6645 1Z" fill="white" stroke="#C4CFE3" stroke-width="1.21641" />
       <path d="M12.899 35.8206H17.3951V24.9017L10.9722 20.0845V33.8938C10.9722 34.96 11.836 35.8206 12.899 35.8206Z" fill="#4285F4" />
       <path d="M32.8098 35.8206H37.3059C38.3721 35.8206 39.2328 34.9568 39.2328 33.8938V20.0845L32.8098 24.9017" fill="#34A853" />
