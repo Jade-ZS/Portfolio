@@ -1,9 +1,19 @@
 const projectData = [
   {
     name:'',
-    tech:'',
+    tech:[''],
     intro:'',
     description:'',
+    collaboration:'',
+    deployment:'',
+    repo:'',
+  },
+  {
+    name:'Klime',
+    tech:['react native'],
+    intro:'',
+    description:'',
+    collaboration:'',
     deployment:'',
     repo:'',
   },
