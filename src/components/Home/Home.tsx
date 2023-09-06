@@ -2,8 +2,12 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Home.css';
 import Projects from '../Projects/Projects';
+import GithubIcon from '../../Assets/GithubIcon';
+import GmailIcon from '../../Assets/GmailIcon';
+import LinkedInIcon from '../../Assets/LinkedInIcon';
 
 export default function Home() {
+
   return (
     <div className='home'>
       <div className='intro-container'>
@@ -11,9 +15,9 @@ export default function Home() {
           <h1>Hi, I'm Ziyu "Jade" Shi!</h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           <div className='contacts-box'>
-            <Link to='/'><img alt='linkedIn icon' src={require('../../Assets/linkedIn-icon.svg')}/></Link>
-            <Link to='/'><img alt='github icon' src={require('../../Assets/github-icon.svg')}/></Link>
-            <Link to='/'><img alt='gmail icon' src={require('../../Assets/gmail-icon.svg')}/></Link>
+            <Link to='/'>< LinkedInIcon/></Link>
+            <Link to='/'><GithubIcon /></Link>
+            <Link to='/'><GmailIcon /></Link>
           </div>
         </div>
         <img className='profile intro-right' alt='profile image' src={require('../../Assets/profile.JPG')}/>
