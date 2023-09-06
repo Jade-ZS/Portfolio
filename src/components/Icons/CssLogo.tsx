@@ -2,7 +2,7 @@ import './Icons.css';
 
 export default function CssLogo() {
   return (
-    <svg width="70" height="79" viewBox="0 0 70 79" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg className='skill-logo' width="70" height="79" viewBox="0 0 70 79" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M34.7144 78.8363L6.32619 70.9556L0 0H69.5139L63.181 70.9445L34.7144 78.8363Z" fill="#264DE4" />
       <path d="M57.7592 66.4266L63.1711 5.80127H34.7568V72.8037L57.7592 66.4266Z" fill="#2965F1" />
       <path d="M14.5026 32.1177L15.2825 40.82H34.7569V32.1177H14.5026Z" fill="#EBEBEB" />

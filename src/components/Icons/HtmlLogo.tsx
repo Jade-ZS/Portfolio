@@ -2,7 +2,7 @@ import './Icons.css';
 
 export default function HtmlLogo() {
   return (
-    <svg width="70" height="79" viewBox="0 0 70 79" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg className='skill-logo' width="70" height="79" viewBox="0 0 70 79" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M6.32636 70.9526L0 0H69.5139L63.1791 70.9413L34.7147 78.8331L6.32636 70.9526Z" fill="#E44F26" />
       <path d="M34.757 72.8024L57.7593 66.4254L63.1707 5.80273H34.757V72.8024Z" fill="#F1662A" />
       <path d="M34.7569 32.1158H23.2417L22.4477 23.2048H34.7569V14.5022H34.726H12.9371L13.1454 16.839L15.2824 40.8184H34.7569V32.1158Z" fill="#EBEBEB" />
