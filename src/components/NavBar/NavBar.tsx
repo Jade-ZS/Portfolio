@@ -8,8 +8,10 @@ export default function NavBar() {
       <h1 className='name'>Ziyu "Jade" Shi</h1>
       <div className='right'>
         <NavLink to='/'><h1>Home</h1></NavLink>
-        <NavLink to='/projects'><h1>Projects</h1></NavLink>
-        <NavLink to='/skills'><h1>Skills</h1></NavLink>
+        <NavLink to='/portfolio'><h1>Portfolio</h1></NavLink>
+        {/* <NavLink to='/projects'><h1>Projects</h1></NavLink>
+        <NavLink to='/skills'><h1>Skills</h1></NavLink> */}
+        {/* make skills, projects, resume sub menu of portfolio */}
         <NavLink to='/story'><h1>My Story</h1></NavLink>
         <NavLink to='/contact'><h1>Contact</h1></NavLink>
       </div>

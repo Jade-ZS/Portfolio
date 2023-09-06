@@ -12,6 +12,7 @@
 .intro-container {
   justify-content: space-between;
   align-items: center;
+  margin-top: 4rem;
 }
 
 .intro-left {
@@ -26,4 +27,7 @@
   object-fit: cover;
 }
 
+.contacts-box {
+  gap: 0.5rem;
+}
 
