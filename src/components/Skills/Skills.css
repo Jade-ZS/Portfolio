@@ -1,15 +1,17 @@
 .skills-container {
   background: linear-gradient(rgba(63, 36, 59, 0.471), rgba(93, 41, 96, 0.539)), url('/Users/jadeshi/turing/4mod/projects/portfolio/src/Assets/cool-background (2).png') no-repeat;
-  background-size: 100%;
+  /* background-size: 100%; */
+  width: 80%;  
   display: flex;
   gap: 15rem;
+  border-top-left-radius: 900px;
+  border-top-right-radius: 90%;
+  border-bottom-left-radius: 90%;
   border-bottom-right-radius: 900px;
-  border-top-left-radius: 90%;
-  border-bottom-left-radius: 30%;
-  border-top-right-radius: 50px;
 }
 
 .skill-cards-container {
+
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
