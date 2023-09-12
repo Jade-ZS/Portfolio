@@ -6,7 +6,12 @@ export default function Projects() {
     <div className='projects-container'>
       <h1 className='portfolio-header'>Projects</h1>
       <div className='project-cards-container'>
-        <img className='featured-project-bg' src={require('../../Assets/weather-bg.png')}/>
+        <div className='bg-container'>
+          <img className='featured-project-bg' src={require('../../Assets/weather-bg.png')}/>
+          <div className='overlay'>
+            <p>hi</p>
+          </div>
+        </div>
         {/* <ProjectCard />
         <ProjectCard />
         <ProjectCard />
