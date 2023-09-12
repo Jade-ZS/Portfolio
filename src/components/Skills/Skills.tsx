@@ -12,9 +12,9 @@ import TSLogo from '../Icons/TSLogo';
 export default function Skills() {
   return (
     <div className='skills-container'>
-      <h1>Skills</h1>
-      <div className='logo-container'>
-        <JSLogo />
+      <h1 className='portfolio-header'>Skills</h1>
+      <div className='skill-cards-container'>
+        {/* <JSLogo />
         <HtmlLogo />
         <CssLogo />
         <ReactLogo />
@@ -22,7 +22,40 @@ export default function Skills() {
         <PwaLogo />
         <CyLogo />
         <MochaLogo />
-        <ChaiLogo />
+        <ChaiLogo /> */}
+
+        <div className='skill-card grid-item-1'>
+          <h1>Front End</h1>
+          <li>Lorem ipsum</li>
+          <li>Lorem ipsum</li>
+          <li>Lorem ipsum</li>
+          <li>Lorem ipsum</li>
+          <li>Lorem ipsum</li>
+        </div>
+        <div className='skill-card grid-item-2'>
+          <h1>Back End</h1>
+          <li>Lorem ipsum</li>
+          <li>Lorem ipsum</li>
+          <li>Lorem ipsum</li>
+          <li>Lorem ipsum</li>
+          <li>Lorem ipsum</li>
+        </div>
+        <div className='skill-card grid-item-3'>
+          <h1>UI/UX</h1>
+          <li>Lorem ipsum</li>
+          <li>Lorem ipsum</li>
+          <li>Lorem ipsum</li>
+          <li>Lorem ipsum</li>
+          <li>Lorem ipsum</li>
+        </div>
+        <div className='skill-card grid-item-4'>
+          <h1>Testing</h1>
+          <li>Lorem ipsum</li>
+          <li>Lorem ipsum</li>
+          <li>Lorem ipsum</li>
+          <li>Lorem ipsum</li>
+          <li>Lorem ipsum</li>
+        </div>
       </div>
     </div>
   );
