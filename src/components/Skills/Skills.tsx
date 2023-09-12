@@ -26,35 +26,35 @@ export default function Skills() {
 
         <div className='skill-card grid-item-1'>
           <h1>Front End</h1>
-          <li>Lorem ipsum</li>
-          <li>Lorem ipsum</li>
-          <li>Lorem ipsum</li>
-          <li>Lorem ipsum</li>
-          <li>Lorem ipsum</li>
+          <span>Lorem ipsum</span>
+          <span>Lorem ipsum</span>
+          <span>Lorem ipsum</span>
+          <span>Lorem ipsum</span>
+          <span>Lorem ipsum</span>
         </div>
         <div className='skill-card grid-item-2'>
           <h1>Back End</h1>
-          <li>Lorem ipsum</li>
-          <li>Lorem ipsum</li>
-          <li>Lorem ipsum</li>
-          <li>Lorem ipsum</li>
-          <li>Lorem ipsum</li>
+          <span>Lorem ipsum</span>
+          <span>Lorem ipsum</span>
+          <span>Lorem ipsum</span>
+          <span>Lorem ipsum</span>
+          <span>Lorem ipsum</span>
         </div>
         <div className='skill-card grid-item-3'>
           <h1>UI/UX</h1>
-          <li>Lorem ipsum</li>
-          <li>Lorem ipsum</li>
-          <li>Lorem ipsum</li>
-          <li>Lorem ipsum</li>
-          <li>Lorem ipsum</li>
+          <span>Lorem ipsum</span>
+          <span>Lorem ipsum</span>
+          <span>Lorem ipsum</span>
+          <span>Lorem ipsum</span>
+          <span>Lorem ipsum</span>
         </div>
         <div className='skill-card grid-item-4'>
           <h1>Testing</h1>
-          <li>Lorem ipsum</li>
-          <li>Lorem ipsum</li>
-          <li>Lorem ipsum</li>
-          <li>Lorem ipsum</li>
-          <li>Lorem ipsum</li>
+          <span>Lorem ipsum</span>
+          <span>Lorem ipsum</span>
+          <span>Lorem ipsum</span>
+          <span>Lorem ipsum</span>
+          <span>Lorem ipsum</span>
         </div>
       </div>
     </div>
