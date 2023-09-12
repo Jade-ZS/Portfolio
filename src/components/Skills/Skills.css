@@ -2,7 +2,7 @@
   background: linear-gradient(rgba(106, 62, 99, 0.278), rgba(69, 32, 71, 0.353)), url('/Users/jadeshi/turing/4mod/projects/portfolio/src/Assets/cool-background (2).png') no-repeat;
   background-size: 100%;
   display: flex;
-  gap: 5rem;
+  gap: 15rem;
 }
 
 .skill-cards-container {
@@ -19,7 +19,6 @@
   border-radius: 20px;
   padding: 2rem;
   width: 20rem;
-
 }
 
 .skill-card h1 {
