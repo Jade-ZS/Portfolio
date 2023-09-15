@@ -10,22 +10,5 @@
   overflow: scroll;
 }
 
-.bg-container {
-  position: relative;
-  width: 90%;
-}
 
-.featured-project-bg {
-  /* filter: brightness(60%); */
-  width: 90%;
-}
 
-.overlay {
-  background: rgba(115, 107, 168, 0.39);
-  width: 90%;
-  height: 99%;
-  position: absolute;
-  left: 0;
-  top: 0;
-  border-radius: 2px;
-}

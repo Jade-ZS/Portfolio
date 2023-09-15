@@ -3,6 +3,7 @@
   display: flex;
   gap: 15rem;
   position: relative;
+  padding-top: 3rem;
 }
 
 .skill-cards-container {

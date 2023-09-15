@@ -1,9 +1,22 @@
-.project-card {
+.bg-container {
+  position: relative;
   display: flex;
-  flex-direction: column;
-  width: 30%;
-  align-items: center;
-  background: rgb(202, 202, 201);
-  padding: 5%;
-  border-radius: 20px;
+  justify-content: center;
+  width: 90%;
+  margin-bottom: 3rem;
+}
+
+.featured-project-bg {
+  width: 60%;
+}
+
+.overlay {
+  background: rgba(115, 107, 168, 0.39);
+  width: 60%;
+  height: 99%;
+  position: absolute;
+  border-radius: 2px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
