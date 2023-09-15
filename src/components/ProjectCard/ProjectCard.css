@@ -38,6 +38,11 @@
   width: 40%;
 }
 
+.project-intro p {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
 .logo-text {
   display: flex;
   flex-direction: column;
@@ -51,6 +56,16 @@
   display: flex;
   align-items: center;
   gap: 1rem;
+  width: fit-content;
+}
+
+.expand-bar h4,
+.project-intro h3 {
+  margin: 0;
+}
+
+.expand-bar:hover {
+  border-bottom: solid 1px white;
 }
 
 .arrow-icon {
