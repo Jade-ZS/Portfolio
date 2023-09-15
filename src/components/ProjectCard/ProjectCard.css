@@ -1,5 +1,9 @@
 .project-card {
   color: white;
+  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* background image */
@@ -7,12 +11,11 @@
   position: relative;
   display: flex;
   justify-content: center;
-  width: 90%;
-  /* margin-bottom: 3rem; */
 }
 
 .featured-project-bg,
-.overlay {
+.overlay,
+.accordion {
   width: 70%;
 }
 
@@ -53,5 +56,6 @@
 .accordion {
   background: pink;
   height: 10rem;
+  margin: 0;
 }
 
