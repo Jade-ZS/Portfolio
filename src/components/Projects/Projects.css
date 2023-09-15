@@ -1,5 +1,6 @@
 .projects-container {
   margin-top: 4rem;
+  gap: 2rem;
 }
 
 .project-cards-container {

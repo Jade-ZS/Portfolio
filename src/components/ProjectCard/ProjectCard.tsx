@@ -24,6 +24,9 @@ export default function ProjectCard({ imgName, projectName, description }: props
           </div>
         </div>
       </div>
+      <div className='accordion'>
+        <span>accordion</span>
+      </div>
     </div>
   );
 }
