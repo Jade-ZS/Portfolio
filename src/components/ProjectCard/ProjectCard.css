@@ -1,3 +1,8 @@
+.project-card {
+  color: white;
+}
+
+/* background image */
 .bg-container {
   position: relative;
   display: flex;
@@ -6,17 +11,40 @@
   margin-bottom: 3rem;
 }
 
-.featured-project-bg {
-  width: 60%;
+.featured-project-bg,
+.overlay {
+  width: 70%;
 }
 
 .overlay {
-  background: rgba(115, 107, 168, 0.39);
-  width: 60%;
+  background: rgba(115, 107, 168, 0.23);
   height: 99%;
   position: absolute;
   border-radius: 2px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+
+  /* overlay text layout */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.project-intro {
+  width: 40%;
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-text h1 {
+  margin: 0;
+}
+
+.expand-bar {
+  display: flex;
+  align-items: center;
 }
