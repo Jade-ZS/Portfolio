@@ -36,7 +36,7 @@ export default function ProjectCard({ imgName, projectName, description }: props
         <img className='featured-project-bg' src={require(`../../Assets/${imgName}.png`)} />
         {overlay}
       </div>
-      <div className='accordion'>
+      <div className={`accordion ${!expand && 'hidden'}`}>
         <span>accordion</span>
       </div>
     </div>
