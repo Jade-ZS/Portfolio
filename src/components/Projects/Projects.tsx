@@ -5,15 +5,16 @@ import { useState } from 'react';
 export default function Projects() {
   const [expand, setExpand] = useState(false);
   const [hover, setHover] = useState(false);
+  const [clicked, setClicked] = useState(false);
   const toggleExpand = () => {
     setExpand(prev => !prev);
+    setClicked(prev => !prev);
   };
   const toggleHover = () => {
     setHover(prev => !prev);
-  }
-
-
-  const description = 'Lorem ipsum dolor sit amet,  Integer quis auctor elit sed vulputate mi sit amet mauris.'
+  };
+ 
+  const description = 'Lorem ipsum dolor sit amet,  Integer quis auctor elit sed vulputate mi sit amet mauris.';
   return (
     <div className='projects-container'>
       <h1 className='portfolio-header'>Projects</h1>
@@ -24,13 +25,13 @@ export default function Projects() {
       <div className='more-projects'>
         <div className='expand-bar'>
           <h4 style={{ color: '#8D86BE' }}>{expand ? 'HIDE' : 'VIEW'} MORE</h4>
-          <img 
-            onClick={toggleExpand} 
-            onMouseEnter={toggleHover} 
+          <img
+            onClick={toggleExpand}
+            onMouseEnter={toggleHover}
             onMouseLeave={toggleHover}
-            className={`arrow-icon ${(expand && 'toRight')}`} 
-            src={require(`../../Assets/${hover ? 'arrow-right-filled' : 'arrow-right'}.png`)} 
-            alt='arrow' 
+            className={`arrow-icon ${(expand && 'toRight')}`}
+            src={require(`../../Assets/${hover ? 'arrow-right-filled' : clicked? 'arrow-right-filled' : 'arrow-right'}.png`)}
+            alt='arrow'
           />
         </div>
         <div className={`accordion ${!expand && 'hidden'}`}>
