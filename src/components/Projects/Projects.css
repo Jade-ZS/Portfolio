@@ -3,6 +3,7 @@
   gap: 2rem;
 }
 
+/* more-projects section */
 .more-projects {
   display: flex;
   flex-direction: column;
@@ -15,10 +16,15 @@
   display: flex;
   justify-content: flex-end;
   margin-right: 10%;
+  margin-bottom: 1rem;
 }
 
 .toRight {
   transform: rotate(90deg);
+}
+
+.more-projects .accordion {
+  background: #b7b2dc70;
 }
 
 
