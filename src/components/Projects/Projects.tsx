@@ -13,6 +13,13 @@ export default function Projects() {
   const toggleHover = () => {
     setHover(prev => !prev);
   };
+  const toggleFilled = () => {
+    if (hover && !expand || clicked && expand) {
+      return 'arrow-right-filled';
+    } else {
+      return 'arrow-right';
+    }
+  };
  
   const description = 'Lorem ipsum dolor sit amet,  Integer quis auctor elit sed vulputate mi sit amet mauris.';
   return (
@@ -30,7 +37,7 @@ export default function Projects() {
             onMouseEnter={toggleHover}
             onMouseLeave={toggleHover}
             className={`arrow-icon ${(expand && 'toRight')}`}
-            src={require(`../../Assets/${hover ? 'arrow-right-filled' : clicked? 'arrow-right-filled' : 'arrow-right'}.png`)}
+            src={require(`../../Assets/${toggleFilled()}.png`)}
             alt='arrow'
           />
         </div>
