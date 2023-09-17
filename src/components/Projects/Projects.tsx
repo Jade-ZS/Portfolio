@@ -1,5 +1,6 @@
 import './Projects.css';
 import ProjectCard from '../ProjectCard/ProjectCard';
+import MiniCard from '../MiniCard/MiniCard';
 import { useState } from 'react';
 
 export default function Projects() {
@@ -43,6 +44,9 @@ export default function Projects() {
         </div>
         <div className={`accordion ${!expand && 'hidden'}`}>
           <span>accordion</span>
+          <MiniCard />
+          <MiniCard />
+          <MiniCard />
         </div>
       </div>
     </div>

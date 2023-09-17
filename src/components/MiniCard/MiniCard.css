@@ -1,0 +1,12 @@
+.mini-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 5rem;
+}
+
+.mini-card img {
+  width: 70%;
+}

@@ -25,6 +25,14 @@
 
 .more-projects .accordion {
   background: #b7b2dc70;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+}
+
+.more-projects .accordion.hidden {
+  display: none;
 }
 
 
