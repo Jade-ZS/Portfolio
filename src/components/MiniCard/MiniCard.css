@@ -3,10 +3,17 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 4rem;
-  height: 5rem;
+  width: fit-content;
+  height: fit-content;
+  border: solid 2px black;
 }
 
 .mini-card img {
   width: 70%;
+}
+
+.link-bar {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
 }

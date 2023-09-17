@@ -43,10 +43,21 @@ export default function Projects() {
           />
         </div>
         <div className={`accordion ${!expand && 'hidden'}`}>
-          <span>accordion</span>
           <MiniCard />
           <MiniCard />
           <MiniCard />
+          <MiniCard />
+          <MiniCard />
+          <MiniCard />
+          <MiniCard />
+          <MiniCard />
+          <MiniCard />
+          <MiniCard />
+          <MiniCard />
+          <MiniCard />
+          <MiniCard />
+          <MiniCard />
+          
         </div>
       </div>
     </div>
