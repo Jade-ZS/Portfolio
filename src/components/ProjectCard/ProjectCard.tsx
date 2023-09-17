@@ -24,7 +24,7 @@ export default function ProjectCard({ imgName, projectName, description }: props
         <p>{description}</p>
         <div className='expand-bar' onClick={handleExpand}>
           <h4>{expand ? 'HIDE' : 'READ'} DETAILS</h4>
-          <img className={`arrow-icon ${(expand && 'flipped')}`} src={require('../../Assets/down-arrow.png')} alt='arrow'/>
+          <img className={`arrow-icon ${(expand && 'flipped')}`} src={require('../../Assets/down-arrow-double.png')} alt='arrow'/>
         </div>
       </div>
     </div>
