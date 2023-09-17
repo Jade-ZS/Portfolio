@@ -14,13 +14,13 @@ export default function Projects() {
     setHover(prev => !prev);
   };
   const toggleFilled = () => {
-    if (hover && !expand || clicked && expand) {
+    if (hover && !clicked || !hover && clicked) {
       return 'arrow-right-filled';
-    } else {
+    } else{
       return 'arrow-right';
     }
   };
- 
+
   const description = 'Lorem ipsum dolor sit amet,  Integer quis auctor elit sed vulputate mi sit amet mauris.';
   return (
     <div className='projects-container'>
