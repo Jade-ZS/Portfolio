@@ -2,7 +2,7 @@ import React from 'react';
 import './Portfolio.css';
 import Skills from '../Skills/Skills';
 import Projects from '../Projects/Projects';
-import Experience from '../Experience/Experience';
+import Resume from '../Resume/Resume';
 
 export default function Portfolio() {
   console.log('portfolio')
@@ -10,7 +10,7 @@ export default function Portfolio() {
     <div className='portfolio-container'>
       <Skills />
       <Projects />
-      <Experience />
+      <Resume />
     </div>
   )
 }
