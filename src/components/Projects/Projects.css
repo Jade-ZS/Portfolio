@@ -19,6 +19,10 @@
   margin-bottom: 1rem;
 }
 
+.more-projects .expand-bar:hover {
+  border-bottom: none;
+}
+
 .toRight {
   transform: rotate(90deg);
 }
