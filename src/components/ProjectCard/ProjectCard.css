@@ -1,9 +1,87 @@
 .project-card {
+  color: white;
+  margin-bottom: 3rem;
   display: flex;
   flex-direction: column;
-  width: 30%;
   align-items: center;
-  background: rgb(202, 202, 201);
-  padding: 5%;
-  border-radius: 20px;
 }
+
+/* background image */
+.bg-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.featured-project-bg,
+.overlay,
+.accordion {
+  width: 70%;
+}
+
+.overlay {
+  background: rgba(115, 107, 168, 0.23);
+  height: 99%;
+  position: absolute;
+  border-radius: 2px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  /* overlay text layout */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.project-intro {
+  width: 40%;
+}
+
+.project-intro p {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-text h1 {
+  margin: 0;
+}
+
+.expand-bar {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: fit-content;
+}
+
+.expand-bar h4,
+.project-intro h3 {
+  margin: 0;
+}
+
+.expand-bar:hover {
+  border-bottom: solid 1px white;
+}
+
+.arrow-icon {
+  height: 1.5rem;
+}
+
+.arrow-icon.flipped {
+  transform: rotate(180deg);
+}
+
+/* accordion */
+.accordion {
+  background: pink;
+  height: 10rem;
+  margin: 0;
+}
+
+
+

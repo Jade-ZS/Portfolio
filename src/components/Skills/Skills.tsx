@@ -14,16 +14,7 @@ export default function Skills() {
     <div className='skills-container'>
       <h1 className='portfolio-header'>Skills</h1>
       <div className='skill-cards-container'>
-        {/* <JSLogo />
-        <HtmlLogo />
-        <CssLogo />
-        <ReactLogo />
-        <TSLogo />
-        <PwaLogo />
-        <CyLogo />
-        <MochaLogo />
-        <ChaiLogo /> */}
-
+        <img className='skill-bg' src={require('../../Assets/wave-haikei.png')}/>
         <div className='skill-card grid-item-1'>
           <h1>Front End</h1>
           <span>Lorem ipsum</span>
