@@ -1,11 +1,12 @@
 import React from 'react';
 import './NavBar.css';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 
 export default function NavBar() {
- 
+  const { pathname } = useLocation();
+
   return (
-    <div className={`nav-bar shadow`}>
+    <div className={`nav-bar ${pathname.length > 2 && 'shadow'}`}>
       <h1 className='name'>Ziyu "Jade" Shi</h1>
       <div className='right'>
         <NavLink to='/'><h1>Home</h1></NavLink>
