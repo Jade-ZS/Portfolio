@@ -1,7 +1,7 @@
 .resume {
-  /* background: #9589da24; */
+  background: #9589da24;
   /* background: #b7b2dc; */
-  background: #dcd5ec;
+  /* background: #dcd5ec; */
   padding-bottom: 5rem;
 }
 
@@ -49,7 +49,7 @@ box-shadow: inset 6px 6px 12px #848496,
 
 background: #dcd5ec;
 box-shadow: inset 6px 6px 12px #b2adbf,
-            inset -6px -6px 12px #fffdff;
+            inset -6px -6px 12px #ead6f2;
 }
 
 .resume-button-container img {
