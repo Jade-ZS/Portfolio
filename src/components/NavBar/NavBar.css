@@ -33,3 +33,13 @@ a {
   text-decoration: none;
 }
 
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+}
+
+
+
