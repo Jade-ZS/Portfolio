@@ -32,8 +32,8 @@ export default function Projects() {
       <ProjectCard projectName='Rancid Tomatillos' description={description} imgName='movie-bg' />
       <div className='more-projects'>
         <div className='expand-bar'>
-          <h4 style={{ color: '#8D86BE' }}>{expand ? 'HIDE' : 'VIEW'} MORE</h4>
-          <img
+          <h4>{expand ? 'HIDE' : 'VIEW'} MORE PROJECTS</h4>
+          <img 
             onClick={toggleExpand}
             onMouseEnter={toggleHover}
             onMouseLeave={toggleHover}
