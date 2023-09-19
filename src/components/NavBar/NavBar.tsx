@@ -12,13 +12,11 @@ export default function NavBar() {
       <div className='right'>
         <NavLink to='/'><h1>Home</h1></NavLink>
         <div className='dropdown'
-          onMouseEnter={() => setShow(true)}
-          onMouseLeave={() => setShow(false)}
+          onMouseEnter={() => pathname.includes('portfolio') && setShow(true)}
+          onMouseLeave={() => pathname.includes('portfolio') && setShow(false)}
         >
           <NavLink to='/portfolio'>
-            <h1
-              onMouseEnter={() => setShow(true)}
-            >Portfolio</h1>
+            <h1>Portfolio</h1>
           </NavLink>
           <div className={`dropdown-menu ${show && 'show'}`}>
             <p>Skills</p>

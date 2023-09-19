@@ -5,10 +5,6 @@
   align-items: center;
 }
 
-.active {
-  border-bottom: solid 5px rgb(163, 116, 177);
-}
-
 .hidden {
   display: none;
 }

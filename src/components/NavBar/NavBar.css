@@ -56,4 +56,8 @@ a {
   pointer-events: auto;
 }
 
+.active {
+  border-bottom: solid 5px rgb(163, 116, 177);
+}
+
 
