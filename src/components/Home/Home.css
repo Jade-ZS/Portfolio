@@ -5,18 +5,15 @@
   display: flex;
 }
 
-.home {
-  flex-direction: column;
-}
-
 .intro-container {
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  gap: 20%;
   margin-top: 4rem;
 }
 
 .intro-left {
-  width: 50%;
+  width: 30%;
   flex-direction: column;
 }
 

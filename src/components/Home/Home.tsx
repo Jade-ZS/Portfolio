@@ -22,7 +22,6 @@ export default function Home() {
         </div>
         <img className='profile intro-right' alt='profile image' src={require('../../Assets/profile.JPG')}/>
       </div>
-      {/* <Projects /> */}
     </div>
   );
 }

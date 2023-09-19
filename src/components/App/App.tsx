@@ -9,6 +9,7 @@ import Portfolio from '../Portfolio/Portfolio';
 import Story from '../Story/Story';
 
 function App() {
+  console.log('pathname: ', window.location.pathname)
   return (
     <div className='App'>
       {<NavBar/ >}
