@@ -40,6 +40,8 @@ a {
 
 .dropdown-menu {
   width: 100%;
+  padding: 2rem;
+  left: -2rem;
   position: absolute;
   background: white;
   text-align: center;
