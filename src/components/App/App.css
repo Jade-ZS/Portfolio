@@ -6,9 +6,16 @@
   align-items: center;
 }
 
+.active {
+  border-bottom: solid 5px purple;
+  /* text-decoration: underline; */
+}
+
 .hidden {
   display: none;
 }
+
+
 
 
 
