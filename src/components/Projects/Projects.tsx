@@ -24,7 +24,8 @@ export default function Projects() {
 
   const description = 'Lorem ipsum dolor sit amet,  Integer quis auctor elit sed vulputate mi sit amet mauris.';
   return (
-    <div className='projects-container'>
+    <div className='projects-container' id='projects'>
+      <div style={{height: '2rem'}}/>
       <h1 className='portfolio-header'>Projects</h1>
       <ProjectCard projectName='Outfit Forecast' description={description} imgName='weather-bg' />
       <ProjectCard projectName='Klime' description={description} imgName='klime-bg' />

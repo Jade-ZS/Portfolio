@@ -2,7 +2,7 @@ import './Resume.css';
 
 export default function Experience() {
   return (
-    <div className='resume'>
+    <div className='resume' id='resume'>
       <h1 className='portfolio-header'>Resume</h1>
       <div className='resume-button-container'>
         <a className='view-resume-button' target='blank' href='https://drive.google.com/file/d/1oDQRNW_OSkG0EixDvABJI0e5RtIlxYlT/view?usp=sharing'>

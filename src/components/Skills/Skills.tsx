@@ -11,7 +11,7 @@ import TSLogo from '../Icons/TSLogo';
 
 export default function Skills() {
   return (
-    <div className='skills-container'>
+    <div className='skills-container' id='skills'>
       <h1 className='portfolio-header'>Skills</h1>
       <div className='skill-cards-container'>
         <img className='skill-bg' src={require('../../Assets/wave-haikei.png')}/>

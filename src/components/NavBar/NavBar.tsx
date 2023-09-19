@@ -5,7 +5,7 @@ import { NavLink, useLocation } from 'react-router-dom';
 export default function NavBar() {
   const { pathname } = useLocation();
   const [show, setShow] = useState(false);
- 
+
   return (
     <div className={`nav-bar ${pathname.length > 2 && 'shadow'}`}>
       <h1 className='name'>Ziyu "Jade" Shi</h1>
@@ -19,9 +19,15 @@ export default function NavBar() {
             <h1>Portfolio</h1>
           </NavLink>
           <div className={`dropdown-menu ${show && 'show'}`}>
-            <p>Skills</p>
-            <p>Projects</p>
-            <p>Resume</p>
+            <NavLink to='/portfolio/#skills'>
+              <p>Skills</p>
+            </NavLink>
+            <NavLink to='/portfolio/#projects'>
+              <p>Projects</p>
+            </NavLink>
+            <NavLink to='/portfolio/#resume'>
+              <p>Resume</p>
+            </NavLink>
           </div>
         </div>
         <NavLink to='/story'><h1>My Story</h1></NavLink>
