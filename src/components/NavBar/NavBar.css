@@ -35,11 +35,25 @@ a {
 
 .dropdown {
   position: relative;
+  background: white;
 }
 
 .dropdown-menu {
+  width: 100%;
   position: absolute;
+  background: white;
+  text-align: center;
+  border-radius:  0 0 .25rem .25rem;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-10px);
+  transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
 }
 
+.dropdown-menu.show {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
 
 
