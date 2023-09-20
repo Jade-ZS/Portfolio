@@ -33,9 +33,17 @@ a {
   text-decoration: none;
 }
 
+.active {
+  border-bottom: solid 5px rgb(163, 116, 177);
+}
+
+.purple-bg {
+  background: #b7b2dc;
+}
+
+/* dropdown menu */
 .dropdown {
   position: relative;
-  background: white;
 }
 
 .dropdown-menu {
@@ -63,12 +71,5 @@ a {
   font-weight: bold;
 }
 
-.active {
-  border-bottom: solid 5px rgb(163, 116, 177);
-}
-
-.purple-bg {
-  background: #b7b2dc;
-}
 
 
