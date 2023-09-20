@@ -58,6 +58,11 @@ a {
   pointer-events: auto;
 }
 
+.dropdown-menu>a>p:hover {
+  transform: scale(1.1);
+  font-weight: bold;
+}
+
 .active {
   border-bottom: solid 5px rgb(163, 116, 177);
 }
