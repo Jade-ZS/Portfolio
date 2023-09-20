@@ -11,25 +11,26 @@ export default function NavBar() {
       <h1 className='name'>Ziyu "Jade" Shi</h1>
       <div className='right'>
         <NavLink to='/'><h1>Home</h1></NavLink>
-        <NavLink to='/portfolio'><div className='dropdown'
-          onMouseEnter={() => pathname.includes('portfolio') && setShow(true)}
-          onMouseLeave={() => pathname.includes('portfolio') && setShow(false)}
-        >
-          {/* <NavLink to='/portfolio'> */}
-            <h1 className={`${pathname.includes('portfolio') ? 'purple-bg' : ''}`}>Portfolio</h1>
-          {/* </NavLink> */}
-          <div className={`dropdown-menu ${show && 'show'}`}>
-            <NavLink to='/portfolio/#skills'>
-              <p>Skills</p>
+          <div 
+            className={`dropdown ${pathname.includes('portfolio') && 'purple-bg active'} `}
+            onMouseEnter={() => pathname.includes('portfolio') && setShow(true)}
+            onMouseLeave={() => pathname.includes('portfolio') && setShow(false)}
+          >
+            <NavLink to='/portfolio'>
+              <h1>Portfolio</h1>
             </NavLink>
-            <NavLink to='/portfolio/#projects'>
-              <p>Projects</p>
-            </NavLink>
-            <NavLink to='/portfolio/#resume'>
-              <p>Resume</p>
-            </NavLink>
+            <div className={`dropdown-menu ${show && 'show'}`}>
+              <NavLink to='/portfolio/#skills'>
+                <p>Skills</p>
+              </NavLink>
+              <NavLink to='/portfolio/#projects'>
+                <p>Projects</p>
+              </NavLink>
+              <NavLink to='/portfolio/#resume'>
+                <p>Resume</p>
+              </NavLink>
+            </div>
           </div>
-        </div></NavLink>
         <NavLink to='/story'><h1>My Story</h1></NavLink>
         <NavLink to='/contact'><h1>Contact</h1></NavLink>
       </div>
