@@ -1,5 +1,6 @@
 import './ProjectCard.css';
 import { useState } from 'react';
+import { v4 as uuid } from 'uuid';
 
 type props = {
   imgName: string,
@@ -13,7 +14,7 @@ export default function ProjectCard({ imgName, projectName, description }: props
     setExpand(prev => !prev);
   }
 
-  const logoText = projectName.split(' ').map(word => <h1>{word}</h1>);
+  const logoText = projectName.split(' ').map(word => <h1 key={uuid()}>{word}</h1>);
   const overlay = (
     <div className='overlay'>
       <div className='logo-text'>

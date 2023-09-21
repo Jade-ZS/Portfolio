@@ -1,18 +1,19 @@
 .skills-container {
   width: 100%;  
   display: flex;
-  gap: 15rem;
+  flex-direction: column;
   position: relative;
   padding-top: 3rem;
 }
 
 .skill-cards-container {
+  width: 70%;
+  margin: auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
   grid-column-gap: 3rem;
   grid-row-gap: 3rem;
-  padding: 2rem;
 }
 
 .skill-card {

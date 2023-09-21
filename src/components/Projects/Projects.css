@@ -17,6 +17,7 @@
   justify-content: flex-end;
   margin-right: 10%;
   margin-bottom: 1rem;
+  color: #221663;
 }
 
 .more-projects .expand-bar:hover {
@@ -47,13 +48,6 @@
 
 
 
-/* .project-cards-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 5%;
-  overflow: scroll;
-} */
 
 
 
