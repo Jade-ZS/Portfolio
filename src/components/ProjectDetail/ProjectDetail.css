@@ -1,5 +1,28 @@
-.accordion {
+.accordion.project-detail {
+  display: flex;
   background: rgba(211, 200, 219, 0.422);
-  height: 10rem;
-  margin: 0;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 2rem;
+  color: rgb(72, 69, 79);
 }
+
+.accordion.hidden {
+  display: none;
+}
+
+.content-container,
+.tech-container,
+.buttons-to-app {
+  display: flex;
+}
+
+
+/* left */
+.content-container {
+  flex-direction: column;
+  width: 40%;
+}
+
+
+/* right */
