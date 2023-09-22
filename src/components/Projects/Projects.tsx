@@ -27,10 +27,26 @@ export default function Projects() {
     <div className='projects-container' id='projects'>
       <div style={{height: '2rem'}}/>
       <h1 className='portfolio-header'>Projects</h1>
-      <ProjectCard projectName='Outfit Forecast' description={description} imgName='weather-bg' />
-      <ProjectCard projectName='Klime' description={description} imgName='klime-bg' />
-      <ProjectCard projectName='Boardgame Gathering' description={description} imgName='game-bg' />
-      <ProjectCard projectName='Rancid Tomatillos' description={description} imgName='movie-bg' />
+      <ProjectCard 
+        projectName='Outfit Forecast' 
+        description={'A React application that allows users to search simultaneous weather by location and get outfit recommendations'} 
+        imgName='weather-bg' 
+      />
+      <ProjectCard 
+        projectName='Klime' 
+        description={'A React Native iOS mobile app that allows users to create and design their own climbing problems by photo-editing'} 
+        imgName='klime-bg' 
+      />
+      <ProjectCard 
+        projectName='Boardgame Gathering' 
+        description={'A Progressive Web Application that allows users to search and browse through a selection of featured games'} 
+        imgName='game-bg' 
+      />
+      <ProjectCard 
+        projectName='Rancid Tomatillos' 
+        description={'A React application designed to help movie enthusiasts search for movies, view their details, and rate them.'} 
+        imgName='movie-bg' 
+      />
       <div className='more-projects'>
         <div className='expand-bar'>
           <h4>{expand ? 'HIDE' : 'VIEW'} MORE PROJECTS</h4>
