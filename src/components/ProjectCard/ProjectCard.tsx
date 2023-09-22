@@ -1,6 +1,7 @@
 import './ProjectCard.css';
 import { useState } from 'react';
 import { v4 as uuid } from 'uuid';
+import ProjectDetail from '../ProjectDetail/ProjectDetail';
 
 type props = {
   imgName: string,
@@ -37,9 +38,7 @@ export default function ProjectCard({ imgName, projectName, description }: props
         <img className='featured-project-bg' src={require(`../../Assets/${imgName}.png`)} />
         {overlay}
       </div>
-      <div className={`accordion ${!expand && 'hidden'}`}>
-        <span>accordion</span>
-      </div>
+      <ProjectDetail expand={expand}/>
     </div>
   );
 }
