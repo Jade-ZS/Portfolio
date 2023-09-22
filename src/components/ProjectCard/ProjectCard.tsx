@@ -2,6 +2,7 @@ import './ProjectCard.css';
 import { useState } from 'react';
 import { v4 as uuid } from 'uuid';
 import ProjectDetail from '../ProjectDetail/ProjectDetail';
+import { githubMark } from '../../Assets/github-mark';
 
 type props = {
   imgName: string,
@@ -27,6 +28,7 @@ export default function ProjectCard({ imgName, projectName, description }: props
         <div className='expand-bar' onClick={handleExpand}>
           <h4>{expand ? 'HIDE' : 'READ'} DETAILS</h4>
           <img className={`arrow-icon ${(expand && 'flipped')}`} src={require('../../Assets/down-arrow-double.png')} alt='arrow'/>
+          { githubMark}
         </div>
       </div>
     </div>
