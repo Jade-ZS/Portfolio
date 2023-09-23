@@ -32,7 +32,7 @@ const featuredDetails : FeaturedDetails = {
       },
     ],
     github: 'https://github.com/Jade-ZS/Outfit_Forecast',
-    deployment: 'https://vercel.com/jade-zs/outfit-forecast',
+    deployment: 'https://outfit-forecast.vercel.app/',
     images: [],
   },
 
