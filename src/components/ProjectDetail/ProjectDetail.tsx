@@ -2,10 +2,10 @@ import './ProjectDetail.css';
 
 type props = {
   expand: boolean,
-  // illustrations: array
+  detail: object,
 }
 
-export default function ProjectDetail({expand} : props) {
+export default function ProjectDetail({expand, detail} : props) {
   return (
     <div className={`project-detail accordion ${!expand && 'hidden'}`}>
       <div className='content-container'>

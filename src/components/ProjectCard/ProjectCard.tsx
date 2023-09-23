@@ -43,7 +43,7 @@ export default function ProjectCard({ imgName, projectName, description, detail 
         <img className='featured-project-bg' src={require(`../../Assets/${imgName}.png`)} />
         {overlay}
       </div>
-      <ProjectDetail expand={expand}/>
+      <ProjectDetail expand={expand} detail={detail}/>
     </div>
   );
 }
