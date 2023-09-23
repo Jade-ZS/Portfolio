@@ -36,7 +36,7 @@ export default function ProjectDetail({ expand, info }: props) {
         </div>
       </div>
       <div className='image-container'>
-        <img src={require('../../Assets/placeholder.png')} style={{ height: '15rem' }} />
+        <img src={require('../Projects/projectImages/rancid.gif')} style={{ height: '15rem' }} />
         <div className='image-slider'>
           <img src={require('../../Assets/placeholder.png')} style={{ height: '4rem' }} />
           <img src={require('../../Assets/placeholder.png')} style={{ height: '4rem' }} />

@@ -126,7 +126,7 @@ const featuredDetails : FeaturedDetails = {
     ],
     github: 'https://github.com/Jade-ZS/rancid_tomatillos',
     deployment: 'https://rancid-tomatillos-topaz.vercel.app/',
-    images: [],
+    images: ['./projectImages/rancid.gif'],
   },
 };
 
