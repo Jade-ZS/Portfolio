@@ -7,10 +7,11 @@ import { githubMark } from '../../Assets/github-mark';
 type props = {
   imgName: string,
   projectName: string,
-  description: string
+  description: string,
+  detail: object,
 }
 
-export default function ProjectCard({ imgName, projectName, description }: props) {
+export default function ProjectCard({ imgName, projectName, description, detail }: props) {
   const [expand, setExpand] = useState(false);
   const handleExpand = () => {
     setExpand(prev => !prev);
