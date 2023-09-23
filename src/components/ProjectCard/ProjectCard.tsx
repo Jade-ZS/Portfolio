@@ -3,12 +3,13 @@ import { useState } from 'react';
 import { v4 as uuid } from 'uuid';
 import ProjectDetail from '../ProjectDetail/ProjectDetail';
 import { githubMark } from '../../Assets/github-mark';
+import { Info } from '../../Types'
 
 type props = {
   imgName: string,
   projectName: string,
   description: string,
-  detail: object,
+  detail: Info,
 }
 
 export default function ProjectCard({ imgName, projectName, description, detail }: props) {
@@ -43,7 +44,7 @@ export default function ProjectCard({ imgName, projectName, description, detail 
         <img className='featured-project-bg' src={require(`../../Assets/${imgName}.png`)} />
         {overlay}
       </div>
-      <ProjectDetail expand={expand} detail={detail}/>
+      <ProjectDetail expand={expand} info={detail}/>
     </div>
   );
 }

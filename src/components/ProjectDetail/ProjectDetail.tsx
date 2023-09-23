@@ -1,17 +1,21 @@
 import './ProjectDetail.css';
+import { Info } from '../../Types';
 
 type props = {
   expand: boolean,
-  detail: object,
+  info: Info,
 }
 
-export default function ProjectDetail({expand, detail} : props) {
+
+
+export default function ProjectDetail({expand, info} : props) {
+  console.log('info: ', info)
   return (
     <div className={`project-detail accordion ${!expand && 'hidden'}`}>
       <div className='content-container'>
         <div className='project-type'>
           <img className='icon' src={require('../../Assets/collaborator.png')} alt='collaborator icon'/>
-          <span>Team Project</span>
+          {/* <span>{info['type']}</span> */}
         </div>
         <div className='tech-info'>
           <p>Technology Used</p>

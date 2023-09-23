@@ -1,4 +1,6 @@
-const featuredDetails = {
+import { FeaturedDetails } from '../../Types';
+
+const featuredDetails : FeaturedDetails = {
   'outfit-forecast': {
     type: 'Solo Project',
     technologies: ['React', 'Context API', 'Cypress', 'JavaScript', 'HTML', 'CSS'],
@@ -30,7 +32,7 @@ const featuredDetails = {
       },
     ],
     github: 'https://github.com/Jade-ZS/Outfit_Forecast',
-    deploymnet: 'https://vercel.com/jade-zs/outfit-forecast',
+    deployment: 'https://vercel.com/jade-zs/outfit-forecast',
     images: [],
   },
 
@@ -61,7 +63,7 @@ const featuredDetails = {
       },
     ],
     github: 'https://github.com/Jade-ZS/klime_fe',
-    deploymnet: '',
+    deployment: '',
     images: [],
   },
 
@@ -92,7 +94,7 @@ const featuredDetails = {
       },
     ],
     github: 'https://github.com/Jade-ZS/Boardgame_Gathering',
-    deploymnet: 'https://pwa-stretch.vercel.app/',
+    deployment: 'https://pwa-stretch.vercel.app/',
     images: [],
   },
 
@@ -123,7 +125,7 @@ const featuredDetails = {
       },
     ],
     github: 'https://github.com/Jade-ZS/rancid_tomatillos',
-    deploymnet: 'https://rancid-tomatillos-topaz.vercel.app/',
+    deployment: 'https://rancid-tomatillos-topaz.vercel.app/',
     images: [],
   },
 };
