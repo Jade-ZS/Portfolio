@@ -4,8 +4,7 @@
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding: 4rem 0;
   color: rgb(72, 69, 79);
 }
 
@@ -13,6 +12,8 @@
   display: none;
 }
 
+.project-type,
+.tech-info,
 .content-container,
 .tech-container,
 .buttons-to-app,
@@ -21,6 +22,7 @@
   display: flex;
 }
 
+.tech-info,
 .content-container,
 .image-container {
   flex-direction: column;
@@ -30,6 +32,40 @@
 /* left */
 .content-container {
   width: 40%;
+}
+
+.content-container > p {
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+.content-container .icon {
+  width: 1rem;
+}
+
+.project-type {
+  align-items: center;
+  background: rgba(196, 182, 206, 0.422);
+  padding: 0.5rem;
+  border-radius: 10px;
+  width: fit-content;
+  gap: 0.5rem;
+}
+
+.tech-info > p {
+  margin-bottom: 0;
+  font-weight: bold;
+}
+
+.tech-container {
+  gap: 0.5rem;
+}
+
+.tech-container p {
+  color: #221663;
+  font-size: 0.9rem;
+  padding: 0.5rem;
+  border-radius: 10px;
+  background: rgba(196, 182, 206, 0.422);
 }
 
 .buttons-to-app {
@@ -42,7 +78,8 @@
   border: none;
   padding: 0.5rem;
   font-weight: bold;
-  color: rgb(33, 55, 44)
+  color: rgb(33, 55, 44);
+  margin-top: 2rem;
 }
 
 .buttons-to-app button:hover {
