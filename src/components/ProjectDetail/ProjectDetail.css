@@ -14,6 +14,7 @@
 
 .project-type,
 .tech-info,
+.tech-container,
 .content-container,
 .tech-container,
 .buttons-to-app,
@@ -57,13 +58,15 @@
 }
 
 .tech-container {
-  gap: 0.5rem;
+  flex-wrap: wrap;
 }
 
 .tech-container p {
   color: #221663;
   font-size: 0.9rem;
   padding: 0.5rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0;
   border-radius: 10px;
   background: rgba(196, 182, 206, 0.422);
 }

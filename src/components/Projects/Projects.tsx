@@ -37,19 +37,19 @@ export default function Projects() {
         projectName='Klime'
         description={'A React Native iOS mobile app that allows users to create and design their own climbing problems by photo-editing'}
         imgName='klime-bg'
-        detail={featuredDetails['outfit-forecast']}
+        detail={featuredDetails['klime']}
       />
       <ProjectCard
         projectName='Boardgame Gathering'
         description={'A Progressive Web Application that allows users to search and browse through a selection of featured games'}
         imgName='game-bg'
-        detail={featuredDetails['outfit-forecast']}
+        detail={featuredDetails['boardgame-gathering']}
       />
       <ProjectCard
         projectName='Rancid Tomatillos'
         description={'A React application designed to help movie enthusiasts search for movies, view their details, and rate them.'}
         imgName='movie-bg'
-        detail={featuredDetails['outfit-forecast']}
+        detail={featuredDetails['rancid-tomatillos']}
       />
       <div className='more-projects'>
         <div className='expand-bar'>
