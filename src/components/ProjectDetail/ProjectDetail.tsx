@@ -9,7 +9,9 @@ type props = {
 }
 
 export default function ProjectDetail({ expand, info }: props) {
-  const [clickedImgSrc, setClickedImgSrc] = useState(`${info.images[1]}`)
+  const [clickedImgSrc, setClickedImgSrc] = useState(`${info.images[1]}`);
+  const handleClick = (e : any) => setClickedImgSrc(e.target.id);
+
   return (
     <div className={`project-detail accordion ${!expand && 'hidden'}`}>
       <div className='content-container'>
@@ -43,7 +45,7 @@ export default function ProjectDetail({ expand, info }: props) {
           <img className={info.imageClass ? info.imageClass : 'landscapeGif'} src={require(`../${info.images[0]}`)} alt='app preview' />
         </div>
         <div className={info.sliderClass ? info.sliderClass : 'image-slider'} >
-          {info.images.slice(1).map(image => <img onClick={e => console.log(`../${image}`)} key={image} alt='mini preview' src={require(`../${image}`)} />)}
+          {(info.images.length > 1) && info.images.slice(1).map(image => <img id={image} onClick={e => console.log(`../${image}`)} key={image} alt='mini preview' src={require(`../${image}`)} />)}
         </div>
       </div>
     </div>
