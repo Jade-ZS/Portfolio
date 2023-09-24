@@ -33,7 +33,10 @@ const featuredDetails : FeaturedDetails = {
     ],
     github: 'https://github.com/Jade-ZS/Outfit_Forecast',
     deployment: 'https://outfit-forecast.vercel.app/',
-    images: [],
+    images: ['Projects/projectImages/outfit.gif'],
+    imageClass: '',
+    containerClass: '',
+    sliderClass: '',
   },
 
   'klime': {
@@ -64,7 +67,10 @@ const featuredDetails : FeaturedDetails = {
     ],
     github: 'https://github.com/Jade-ZS/klime_fe',
     deployment: '',
-    images: [],
+    images: ['Projects/projectImages/klime.gif'],
+    imageClass: 'portraitGif',
+    containerClass: '',
+    sliderClass: '',
   },
 
   'boardgame-gathering': {
@@ -95,7 +101,10 @@ const featuredDetails : FeaturedDetails = {
     ],
     github: 'https://github.com/Jade-ZS/Boardgame_Gathering',
     deployment: 'https://pwa-stretch.vercel.app/',
-    images: [],
+    images: ['Projects/projectImages/boardgame.gif'],
+    imageClass: '',
+    containerClass: '',
+    sliderClass: '',
   },
 
   'rancid-tomatillos': {
@@ -126,7 +135,10 @@ const featuredDetails : FeaturedDetails = {
     ],
     github: 'https://github.com/Jade-ZS/rancid_tomatillos',
     deployment: 'https://rancid-tomatillos-topaz.vercel.app/',
-    images: ['./projectImages/rancid.gif'],
+    images: ['Projects/projectImages/rancid.gif'],
+    imageClass: '',
+    containerClass: '',
+    sliderClass: '',
   },
 };
 

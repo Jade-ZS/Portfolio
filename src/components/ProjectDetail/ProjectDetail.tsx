@@ -8,7 +8,7 @@ type props = {
 }
 
 export default function ProjectDetail({ expand, info }: props) {
-
+  { console.log(info.imageClass) }
   return (
     <div className={`project-detail accordion ${!expand && 'hidden'}`}>
       <div className='content-container'>
@@ -35,8 +35,8 @@ export default function ProjectDetail({ expand, info }: props) {
           }
         </div>
       </div>
-      <div className='image-container'>
-        <img src={require('../Projects/projectImages/rancid.gif')} style={{ height: '15rem' }} />
+      <div className='image-container'> 
+        <img className={info.imageClass} src={require(`../${info.images[0]}`)} alt='app preview' />
         <div className='image-slider'>
           <img src={require('../../Assets/placeholder.png')} style={{ height: '4rem' }} />
           <img src={require('../../Assets/placeholder.png')} style={{ height: '4rem' }} />

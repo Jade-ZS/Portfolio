@@ -10,7 +10,10 @@ export type Info = {
   features: Array<Features>,
   github: string,
   deployment: string,
-  images: any
+  images: Array<string>,
+  imageClass: string,
+  containerClass: string,
+  sliderClass: string,
 }
 
 export interface FeaturedDetails {

@@ -100,3 +100,8 @@
   gap: 1rem;
   overflow-x: scroll;
 }
+
+.portraitGif {
+  width: 30%;
+  height: auto;
+}
