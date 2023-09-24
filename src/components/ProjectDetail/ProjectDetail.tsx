@@ -29,20 +29,20 @@ export default function ProjectDetail({ expand, info }: props) {
           </Link>
           {
             info.deployment.length ?
-            <Link to={info.deployment} target='blank'>
-              <button>LAUNCH THE APP</button>
-            </Link> : ''
+              <Link to={info.deployment} target='blank'>
+                <button>LAUNCH THE APP</button>
+              </Link> : ''
           }
         </div>
       </div>
-      <div className='image-container'> 
-      <div className='main-img-container'>
-        {info.images.length > 1 ? <img className='main-img' src={require(`../${info.images[1]}`)} alt='app preview' />
-: ''}
-        <img className={info.imageClass} src={require(`../${info.images[0]}`)} alt='app preview' />
-      </div>
+      <div className='image-container'>
+        <div className='main-img-container'>
+          {info.images.length > 1 ? <img className='main-img' src={require(`../${info.images[1]}`)} alt='app preview' />
+            : ''}
+          <img className={info.imageClass} src={require(`../${info.images[0]}`)} alt='app preview' />
+        </div>
         <div className={info.sliderClass ? info.sliderClass : 'image-slider'}>
-          {info.images.slice(1).map(image => <img src={require(`../${image}`)}/>)}
+          {info.images.slice(1).map(image => <img src={require(`../${image}`)} />)}
         </div>
       </div>
     </div>
