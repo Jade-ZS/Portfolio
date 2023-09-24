@@ -39,7 +39,7 @@ export default function ProjectDetail({ expand, info }: props) {
         <div className='main-img-container'>
           {info.images.length > 1 ? <img className='main-img' src={require(`../${info.images[1]}`)} alt='app preview' />
             : ''}
-          <img className={info.imageClass} src={require(`../${info.images[0]}`)} alt='app preview' />
+          <img className={info.imageClass ? info.imageClass : 'landscapeGif'} src={require(`../${info.images[0]}`)} alt='app preview' />
         </div>
         <div className={info.sliderClass ? info.sliderClass : 'image-slider'}>
           {info.images.slice(1).map(image => <img src={require(`../${image}`)} />)}
