@@ -1,17 +1,20 @@
-.accordion.project-detail {
-  display: flex;
+.accordion {
   background: rgba(211, 200, 219, 0.422);
-  justify-content: center;
-  align-items: center;
   gap: 2rem;
   padding: 4rem 0;
   color: rgb(72, 69, 79);
+}
+
+.project-detail {
+  justify-content: center;
+  align-items: center;
 }
 
 .accordion.hidden {
   display: none;
 }
 
+.project-detail,
 .project-type,
 .tech-info,
 .tech-container,
@@ -19,12 +22,16 @@
 .tech-container,
 .buttons-to-app,
 .image-container,
+.portrait-container,
+.portrait-slider,
 .image-slider {
   display: flex;
 }
 
+/* .project-detail-portrait, */
 .tech-info,
 .content-container,
+
 .image-container {
   flex-direction: column;
 }
@@ -96,7 +103,12 @@
   width: 40%;
 }
 
-.image-slider {
+/* .portrait-container {
+  justify-content: flex-end;
+} */
+
+.image-slider,
+.portrait-slider {
   gap: 1rem;
   overflow-x: scroll;
 }
@@ -104,4 +116,20 @@
 .portraitGif {
   width: 30%;
   height: auto;
+}
+
+.main-img-container {
+  display: 'flex';
+}
+
+.main-img-container img {
+  margin-right: 1rem;
+}
+
+.main-img {
+  width: 60%;
+}
+
+.portrait-slider img {
+  width: 20%;
 }

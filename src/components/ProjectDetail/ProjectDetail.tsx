@@ -8,7 +8,7 @@ type props = {
 }
 
 export default function ProjectDetail({ expand, info }: props) {
-  { console.log(info.imageClass) }
+
   return (
     <div className={`project-detail accordion ${!expand && 'hidden'}`}>
       <div className='content-container'>
@@ -36,15 +36,13 @@ export default function ProjectDetail({ expand, info }: props) {
         </div>
       </div>
       <div className='image-container'> 
+      <div className='main-img-container'>
+        {info.images.length > 1 ? <img className='main-img' src={require(`../${info.images[1]}`)} alt='app preview' />
+: ''}
         <img className={info.imageClass} src={require(`../${info.images[0]}`)} alt='app preview' />
-        <div className='image-slider'>
-          <img src={require('../../Assets/placeholder.png')} style={{ height: '4rem' }} />
-          <img src={require('../../Assets/placeholder.png')} style={{ height: '4rem' }} />
-          <img src={require('../../Assets/placeholder.png')} style={{ height: '4rem' }} />
-          <img src={require('../../Assets/placeholder.png')} style={{ height: '4rem' }} />
-          <img src={require('../../Assets/placeholder.png')} style={{ height: '4rem' }} />
-          <img src={require('../../Assets/placeholder.png')} style={{ height: '4rem' }} />
-          <img src={require('../../Assets/placeholder.png')} style={{ height: '4rem' }} />
+      </div>
+        <div className={info.sliderClass ? info.sliderClass : 'image-slider'}>
+          {info.images.slice(1).map(image => <img src={require(`../${image}`)}/>)}
         </div>
       </div>
     </div>

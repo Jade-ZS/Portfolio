@@ -67,10 +67,10 @@ const featuredDetails : FeaturedDetails = {
     ],
     github: 'https://github.com/Jade-ZS/klime_fe',
     deployment: '',
-    images: ['Projects/projectImages/klime.gif'],
+    images: ['Projects/projectImages/klime.gif', 'Projects/projectImages/klime-guide.PNG', 'Projects/projectImages/klime-home.PNG', 'Projects/projectImages/klime-problem.PNG', 'Projects/projectImages/klime-delete.PNG', 'Projects/projectImages/klime-save.PNG'],
     imageClass: 'portraitGif',
-    containerClass: '',
-    sliderClass: '',
+    containerClass: 'portrait-container',
+    sliderClass: 'portrait-slider',
   },
 
   'boardgame-gathering': {
