@@ -19,7 +19,7 @@ export default function ProjectDetail({ expand, info }: props) {
         <div className='tech-info'>
           <p>Technology Used</p>
           <div className='tech-container'>
-            {info.technologies.map(tech => <p>{tech}</p>)}
+            {info.technologies.map(tech => <p key={tech}>{tech}</p>)}
           </div>
         </div>
         <p>{info.description}</p>
@@ -41,8 +41,8 @@ export default function ProjectDetail({ expand, info }: props) {
             : ''}
           <img className={info.imageClass ? info.imageClass : 'landscapeGif'} src={require(`../${info.images[0]}`)} alt='app preview' />
         </div>
-        <div className={info.sliderClass ? info.sliderClass : 'image-slider'}>
-          {info.images.slice(1).map(image => <img src={require(`../${image}`)} />)}
+        <div className={info.sliderClass ? info.sliderClass : 'image-slider'} >
+          {info.images.slice(1).map(image => <img key={image} alt='mini preview' src={require(`../${image}`)} />)}
         </div>
       </div>
     </div>
