@@ -22,7 +22,6 @@ export default function MoreProjects({expand, toggleExpand, toggleHover, toggleF
           alt='arrow'
         />
       </div>
-
       <div className={`accordion ${!expand && 'hidden'}`}>
         <MiniCard />
         <MiniCard />
