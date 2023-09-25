@@ -1,5 +1,7 @@
 .resume {
+  padding-top: 4rem;
   padding-bottom: 5rem;
+  height: 100vh;
 }
 
 .resume-button-container {
