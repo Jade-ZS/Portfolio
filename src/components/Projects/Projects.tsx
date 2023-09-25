@@ -2,6 +2,7 @@ import './Projects.css';
 import ProjectCard from '../ProjectCard/ProjectCard';
 import MiniCard from '../MiniCard/MiniCard';
 import { useState } from 'react';
+import { featuredDetails } from './featuredDetails';
 
 export default function Projects() {
   const [expand, setExpand] = useState(false);
@@ -17,24 +18,43 @@ export default function Projects() {
   const toggleFilled = () => {
     if (hover && !clicked || !hover && clicked) {
       return 'arrow-right-filled';
-    } else{
+    } else {
       return 'arrow-right';
     }
   };
 
-  const description = 'Lorem ipsum dolor sit amet,  Integer quis auctor elit sed vulputate mi sit amet mauris.';
   return (
     <div className='projects-container' id='projects'>
-      <div style={{height: '2rem'}}/>
+      <div style={{ height: '2rem' }} />
       <h1 className='portfolio-header'>Projects</h1>
-      <ProjectCard projectName='Outfit Forecast' description={description} imgName='weather-bg' />
-      <ProjectCard projectName='Klime' description={description} imgName='klime-bg' />
-      <ProjectCard projectName='Boardgame Gathering' description={description} imgName='game-bg' />
-      <ProjectCard projectName='Rancid Tomatillos' description={description} imgName='movie-bg' />
+      <ProjectCard
+        projectName='Outfit Forecast'
+        description={'A React application that allows users to search simultaneous weather by location and get outfit recommendations'}
+        imgName='weather-bg'
+        detail={featuredDetails['outfit-forecast']}
+      />
+      <ProjectCard
+        projectName='Klime'
+        description={'A React Native iOS mobile app that allows users to create and design their own climbing problems by photo-editing'}
+        imgName='klime-bg'
+        detail={featuredDetails['klime']}
+      />
+      <ProjectCard
+        projectName='Boardgame Gathering'
+        description={'A Progressive Web Application that allows users to search and browse through a selection of featured games'}
+        imgName='game-bg'
+        detail={featuredDetails['boardgame-gathering']}
+      />
+      <ProjectCard
+        projectName='Rancid Tomatillos'
+        description={'A React application designed to help movie enthusiasts search for movies, view their details, and rate them.'}
+        imgName='movie-bg'
+        detail={featuredDetails['rancid-tomatillos']}
+      />
       <div className='more-projects'>
         <div className='expand-bar'>
           <h4>{expand ? 'HIDE' : 'VIEW'} MORE PROJECTS</h4>
-          <img 
+          <img
             onClick={toggleExpand}
             onMouseEnter={toggleHover}
             onMouseLeave={toggleHover}
@@ -58,7 +78,7 @@ export default function Projects() {
           <MiniCard />
           <MiniCard />
           <MiniCard />
-          
+
         </div>
       </div>
     </div>

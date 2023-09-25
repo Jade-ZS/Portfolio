@@ -1,14 +1,18 @@
 import './ProjectCard.css';
 import { useState } from 'react';
 import { v4 as uuid } from 'uuid';
+import ProjectDetail from '../ProjectDetail/ProjectDetail';
+import { githubMark } from '../../Assets/github-mark';
+import { Info } from '../../Types'
 
 type props = {
   imgName: string,
   projectName: string,
-  description: string
+  description: string,
+  detail: Info,
 }
 
-export default function ProjectCard({ imgName, projectName, description }: props) {
+export default function ProjectCard({ imgName, projectName, description, detail }: props) {
   const [expand, setExpand] = useState(false);
   const handleExpand = () => {
     setExpand(prev => !prev);
@@ -23,9 +27,12 @@ export default function ProjectCard({ imgName, projectName, description }: props
       <div className='project-intro'>
         <h3>{projectName}</h3>
         <p>{description}</p>
-        <div className='expand-bar' onClick={handleExpand}>
-          <h4>{expand ? 'HIDE' : 'READ'} DETAILS</h4>
-          <img className={`arrow-icon ${(expand && 'flipped')}`} src={require('../../Assets/down-arrow-double.png')} alt='arrow'/>
+        <div style={{display: 'flex', gap: '3rem'}}>
+          <div className='expand-bar' onClick={handleExpand}>
+            <h4>{expand ? 'HIDE' : 'READ'} DETAILS</h4>
+            <img className={`arrow-icon ${(expand && 'flipped')}`} src={require('../../Assets/down-arrow-double.png')} alt='arrow'/>
+          </div>
+          <a href={detail.github} target='blank'>{githubMark('#ffffff')}</a>
         </div>
       </div>
     </div>
@@ -37,9 +44,7 @@ export default function ProjectCard({ imgName, projectName, description }: props
         <img className='featured-project-bg' src={require(`../../Assets/${imgName}.png`)} />
         {overlay}
       </div>
-      <div className={`accordion ${!expand && 'hidden'}`}>
-        <span>accordion</span>
-      </div>
+      <ProjectDetail expand={expand} info={detail}/>
     </div>
   );
 }

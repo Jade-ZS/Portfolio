@@ -1,0 +1,146 @@
+.accordion {
+  background: rgba(211, 200, 219, 0.422);
+  gap: 2rem;
+  padding: 4rem 0;
+  color: rgb(72, 69, 79);
+}
+
+.project-detail {
+  justify-content: center;
+  align-items: center;
+}
+
+.accordion.hidden {
+  display: none;
+}
+
+.project-detail,
+.project-type,
+.tech-info,
+.tech-container,
+.content-container,
+.tech-container,
+.buttons-to-app,
+.image-container,
+.portrait-container,
+.portrait-slider,
+.image-slider {
+  display: flex;
+}
+
+/* .project-detail-portrait, */
+.tech-info,
+.content-container,
+
+.image-container {
+  flex-direction: column;
+}
+
+
+/* left */
+.content-container {
+  width: 40%;
+}
+
+.content-container > p {
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+.content-container .icon {
+  width: 1rem;
+}
+
+.project-type {
+  align-items: center;
+  background: rgba(196, 182, 206, 0.422);
+  padding: 0.5rem;
+  border-radius: 10px;
+  width: fit-content;
+  gap: 0.5rem;
+}
+
+.tech-info > p {
+  margin-bottom: 0;
+  font-weight: bold;
+}
+
+.tech-container {
+  flex-wrap: wrap;
+}
+
+.tech-container p {
+  color: #221663;
+  font-size: 0.9rem;
+  padding: 0.5rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0;
+  border-radius: 10px;
+  background: rgba(196, 182, 206, 0.422);
+}
+
+.buttons-to-app {
+  gap: 1rem;
+}
+
+.buttons-to-app button {
+  background: rgb(141, 174, 158);
+  border-radius: 50px;
+  border: none;
+  padding: 0.5rem;
+  font-weight: bold;
+  color: rgb(33, 55, 44);
+  margin-top: 2rem;
+}
+
+.buttons-to-app button:hover {
+  background: rgb(72, 84, 79);
+  color: rgb(141, 174, 158);
+}
+
+/* right */
+.image-container {
+  gap: 1rem;
+  width: 40%;
+}
+
+.image-slider,
+.portrait-slider {
+  gap: 1rem;
+  overflow-x: scroll;
+}
+
+.landscapeGif {
+  width: 100%;
+}
+
+.portraitGif {
+  width: 30%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.main-img-container {
+  display: 'flex';
+  width: 100%;
+}
+
+.main-img-container img {
+  margin-right: 1rem;
+}
+
+.main-img {
+  width: 60%;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.portrait-slider img {
+  width: 15%;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.image-slider .clicked,
+.portrait-slider .clicked {
+  border: solid 3px rgb(144, 21, 245);
+}
