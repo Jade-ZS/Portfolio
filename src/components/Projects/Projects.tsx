@@ -1,8 +1,8 @@
 import './Projects.css';
 import ProjectCard from '../ProjectCard/ProjectCard';
-import MiniCard from '../MiniCard/MiniCard';
 import { useState } from 'react';
 import { featuredDetails } from './featuredDetails';
+import MoreProjects from '../MoreProjects/MoreProjects';
 
 export default function Projects() {
   const [expand, setExpand] = useState(false);
@@ -51,36 +51,7 @@ export default function Projects() {
         imgName='movie-bg'
         detail={featuredDetails['rancid-tomatillos']}
       />
-      <div className='more-projects'>
-        <div className='expand-bar'>
-          <h4>{expand ? 'HIDE' : 'VIEW'} MORE PROJECTS</h4>
-          <img
-            onClick={toggleExpand}
-            onMouseEnter={toggleHover}
-            onMouseLeave={toggleHover}
-            className={`arrow-icon ${(expand && 'toRight')}`}
-            src={require(`../../Assets/${toggleFilled()}.png`)}
-            alt='arrow'
-          />
-        </div>
-        <div className={`accordion ${!expand && 'hidden'}`}>
-          <MiniCard />
-          <MiniCard />
-          <MiniCard />
-          <MiniCard />
-          <MiniCard />
-          <MiniCard />
-          <MiniCard />
-          <MiniCard />
-          <MiniCard />
-          <MiniCard />
-          <MiniCard />
-          <MiniCard />
-          <MiniCard />
-          <MiniCard />
-
-        </div>
-      </div>
+      <MoreProjects expand={expand} toggleHover={toggleHover} toggleExpand={toggleExpand} toggleFilled={toggleFilled} />
     </div>
   );
 }
