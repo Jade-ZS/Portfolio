@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './NavBar.css';
 import { NavLink, useLocation } from 'react-router-dom';
+import { downArrow } from '../../Assets/down-arrow';
 
 export default function NavBar() {
   const { pathname } = useLocation();
@@ -17,7 +18,7 @@ export default function NavBar() {
             onMouseLeave={() => pathname.includes('portfolio') && setShow(false)}
           >
             <NavLink to='/portfolio'>
-              <h1>Portfolio</h1>
+              <h1>Portfolio {pathname.includes('portfolio') ? downArrow : ''}</h1>
             </NavLink>
             <div className={`dropdown-menu ${show && 'show'}`}>
               <NavLink to='/portfolio/#skills'>
