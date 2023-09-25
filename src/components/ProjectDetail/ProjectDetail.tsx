@@ -10,7 +10,13 @@ type props = {
 
 export default function ProjectDetail({ expand, info }: props) {
   const [clickedImgSrc, setClickedImgSrc] = useState(`${info.images[1]}`);
-  const handleClick = (e : any) => setClickedImgSrc(e.target.id);
+  const [clicked, setClicked] = useState(false);
+  const handleClick = (e : any) => {
+    setClickedImgSrc(e.target.id);
+    setClicked(true);
+  };
+
+
 
   return (
     <div className={`project-detail accordion ${!expand && 'hidden'}`}>
@@ -45,7 +51,7 @@ export default function ProjectDetail({ expand, info }: props) {
           <img className={info.imageClass ? info.imageClass : 'landscapeGif'} src={require(`../${info.images[0]}`)} alt='app preview' />
         </div>
         <div className={info.sliderClass ? info.sliderClass : 'image-slider'} >
-          {(info.images.length > 1) && info.images.slice(1).map(image => <img id={image} onClick={handleClick} key={image} alt='mini preview' src={require(`../${image}`)} />)}
+          {(info.images.length > 1) && info.images.slice(1).map(image => <img className={clickedImgSrc===image ? 'clicked' : ''} id={image} onClick={handleClick} key={image} alt='mini preview' src={require(`../${image}`)} />)}
         </div>
       </div>
     </div>
