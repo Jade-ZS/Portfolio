@@ -142,5 +142,5 @@
 
 .image-slider .clicked,
 .portrait-slider .clicked {
-  border: solid 5px rgb(111, 21, 245);
+  border: solid 3px rgb(144, 21, 245);
 }
