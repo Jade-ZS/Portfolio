@@ -4,7 +4,7 @@ export const moreDetails : MoreDetails = {
   'cookin': {
     type: 'Team Project',
     technologies: ['JavaScript', 'HTML', 'CSS', 'webpack'],
-    image: 'moreImages/cookin.gif',
+    image: 'moreImages/cookin-home.png',
     github: 'https://github.com/Jade-ZS/whats-cookin',
     deployment: '',
   },
