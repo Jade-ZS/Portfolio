@@ -9,15 +9,17 @@ type props = {
 };
 
 export default function MoreProjects({ expand, toggleExpand, toggleHover, toggleFilled }: props) {
-  const moreProjects = Object.keys(moreDetails).map(key => 
+  const moreProjects = Object.keys(moreDetails).map(key =>
     <div className='mini-card' key={key}>
-      <img className='mini-cover' src={require(`./${moreDetails[key].image}`)} alt='project preview'/>
+      <img className='mini-cover' src={require(`./${moreDetails[key].image}`)} alt='project preview' />
       <div className='mini-overlay'>
-        <h3>{key}</h3>
-        <p>{moreDetails[key].description}</p>
-        <div className='buttons-to-app'>
-          <a href={moreDetails[key].github} target='blank'><button>CODE REPOSITORY</button></a>
-          {moreDetails[key].deployment ? <a href={moreDetails[key].deployment} target='blank'><button>LAUNCH THE APP</button></a> : ''}
+        <div className='mini-content-container'>
+          <h3>{key}</h3>
+          <p>{moreDetails[key].description}</p>
+          <div className='buttons-to-app'>
+            <a href={moreDetails[key].github} target='blank'><button>CODE REPOSITORY</button></a>
+            {moreDetails[key].deployment ? <a href={moreDetails[key].deployment} target='blank'><button>LAUNCH THE APP</button></a> : ''}
+          </div>
         </div>
       </div>
     </div>
@@ -38,7 +40,7 @@ export default function MoreProjects({ expand, toggleExpand, toggleHover, toggle
       </div>
       <div className={`accordion ${!expand && 'hidden'}`}>
         {moreProjects}
-        <i aria-hidden='true'/>
+        <i aria-hidden='true' />
       </div>
     </div>
   );
