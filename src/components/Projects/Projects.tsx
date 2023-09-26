@@ -1,7 +1,7 @@
 import './Projects.css';
 import ProjectCard from '../ProjectCard/ProjectCard';
 import { useState } from 'react';
-import { featuredDetails } from './featuredDetails';
+import { featuredDetails } from './featuredDetailsData';
 import MoreProjects from '../MoreProjects/MoreProjects';
 
 export default function Projects() {

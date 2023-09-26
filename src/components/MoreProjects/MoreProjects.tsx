@@ -1,14 +1,21 @@
 import './MoreProjects.css';
 import MiniCard from '../MiniCard/MiniCard';
+import { moreDetails } from './moreDetailsData';
 
 type props = {
   expand: boolean,
   toggleExpand: () => void,
-  toggleHover: () => void, 
+  toggleHover: () => void,
   toggleFilled: () => string,
 };
 
-export default function MoreProjects({expand, toggleExpand, toggleHover, toggleFilled} : props) {
+export default function MoreProjects({ expand, toggleExpand, toggleHover, toggleFilled }: props) {
+  const moreProjects = Object.keys(moreDetails).map(key => 
+    <div>
+      <img style={{width: '2rem'}} src={require(`./${moreDetails[key].image}`)}/>
+    </div>
+  );
+
   return (
     <div className='more-projects'>
       <div className='expand-bar'>
@@ -23,6 +30,8 @@ export default function MoreProjects({expand, toggleExpand, toggleHover, toggleF
         />
       </div>
       <div className={`accordion ${!expand && 'hidden'}`}>
+        {moreProjects}
+        {/* <MiniCard />
         <MiniCard />
         <MiniCard />
         <MiniCard />
@@ -35,8 +44,7 @@ export default function MoreProjects({expand, toggleExpand, toggleHover, toggleF
         <MiniCard />
         <MiniCard />
         <MiniCard />
-        <MiniCard />
-        <MiniCard />
+        <MiniCard /> */}
       </div>
     </div>
   );
