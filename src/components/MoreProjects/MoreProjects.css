@@ -68,8 +68,15 @@
   justify-content: center;
 }
 
+.mini-overlay h3 {
+  font-size: 1.4vmax;
+}
+
+.mini-overlay p {
+  font-size: 1.1vmax;
+}
 .mini-overlay button {
-  font-size: 0.7rem;
+  font-size: 0.7vmax;
 }
 
 .mini-cover {
