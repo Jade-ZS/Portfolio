@@ -20,3 +20,15 @@ export interface FeaturedDetails {
   [key:string] : Info,
 }
 
+export type OtherProject = {
+  type: string,
+  technologies: Array<string>,
+  image: string,
+  github: string,
+  deployment: string
+}
+
+export interface MoreDetails {
+  [key:string] : OtherProject
+}
+

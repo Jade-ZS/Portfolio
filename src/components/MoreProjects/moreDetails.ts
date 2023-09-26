@@ -1,6 +1,6 @@
-import { FeaturedDetails } from '../../Types';
+import { MoreDetails } from '../../Types';
 
-export const moreDetails = {
+export const moreDetails : MoreDetails = {
   'cookin': {
     type: 'Team Project',
     technologies: ['JavaScript', 'HTML', 'CSS', 'webpack'],
