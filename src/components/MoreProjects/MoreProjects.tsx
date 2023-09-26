@@ -10,8 +10,8 @@ type props = {
 
 export default function MoreProjects({ expand, toggleExpand, toggleHover, toggleFilled }: props) {
   const moreProjects = Object.keys(moreDetails).map(key => 
-    <div>
-      <img className='mini-cover' src={require(`./${moreDetails[key].image}`)} alt='project preview'/>
+    <div className='mini-card'>
+      <img className='mini-cover' src={require(`./${moreDetails[key].image}`)} key={key} alt='project preview'/>
     </div>
   );
 
