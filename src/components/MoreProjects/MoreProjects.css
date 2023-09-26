@@ -46,6 +46,7 @@
   width: 40%;
   position: relative;
   overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.1) -3px -3px 12px;
 }
 
 .mini-card:hover .mini-overlay {
@@ -111,7 +112,6 @@
 .mini-cover {
   width: 100%;
   object-fit: cover;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
 i {
