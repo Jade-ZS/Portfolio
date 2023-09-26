@@ -23,13 +23,10 @@
 }
 
 .more-projects .accordion {
-  /* padding: 3rem; */
   border-radius: 10px;
   height: 40rem;
   width: 70%;
   background: #b7b2dc30;
-  /* border: solid 2px black; */
-  /* background: none; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -44,8 +41,13 @@
   display: none;
 }
 
+/* individual project card */
 .mini-card {
   width: 40%;
+}
+
+.mini-card:hover {
+  filter: brightness(50%);
 }
 
 .mini-cover {
