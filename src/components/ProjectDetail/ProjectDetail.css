@@ -89,6 +89,9 @@
   padding: 0.5rem;
   font-weight: bold;
   color: rgb(33, 55, 44);
+}
+
+.project-detail .buttons-to-app button {
   margin-top: 2rem;
 }
 

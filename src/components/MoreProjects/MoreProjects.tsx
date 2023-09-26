@@ -13,7 +13,12 @@ export default function MoreProjects({ expand, toggleExpand, toggleHover, toggle
     <div className='mini-card' key={key}>
       <img className='mini-cover' src={require(`./${moreDetails[key].image}`)} alt='project preview'/>
       <div className='mini-overlay'>
-   
+        <h3>{key}</h3>
+        <p>{moreDetails[key].description}</p>
+        <div className='buttons-to-app'>
+          <a href={moreDetails[key].github} target='blank'><button>CODE REPOSITORY</button></a>
+          {moreDetails[key].deployment ? <a href={moreDetails[key].deployment} target='blank'><button>LAUNCH THE APP</button></a> : ''}
+        </div>
       </div>
     </div>
   );

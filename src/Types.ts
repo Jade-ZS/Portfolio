@@ -25,7 +25,8 @@ export type OtherProject = {
   technologies: Array<string>,
   image: string,
   github: string,
-  deployment: string
+  deployment: string,
+  description: string,
 }
 
 export interface MoreDetails {
