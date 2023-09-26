@@ -1,5 +1,4 @@
 import './MoreProjects.css';
-import MiniCard from '../MiniCard/MiniCard';
 import { moreDetails } from './moreDetailsData';
 
 type props = {
@@ -31,20 +30,6 @@ export default function MoreProjects({ expand, toggleExpand, toggleHover, toggle
       </div>
       <div className={`accordion ${!expand && 'hidden'}`}>
         {moreProjects}
-        {/* <MiniCard />
-        <MiniCard />
-        <MiniCard />
-        <MiniCard />
-        <MiniCard />
-        <MiniCard />
-        <MiniCard />
-        <MiniCard />
-        <MiniCard />
-        <MiniCard />
-        <MiniCard />
-        <MiniCard />
-        <MiniCard />
-        <MiniCard /> */}
       </div>
     </div>
   );
