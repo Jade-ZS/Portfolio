@@ -1,0 +1,128 @@
+.more-projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.more-projects .expand-bar {
+  width: 70%;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 10%;
+  margin-bottom: 1rem;
+  color: #221663;
+}
+
+.more-projects .expand-bar:hover {
+  border-bottom: none;
+}
+
+.toRight {
+  transform: rotate(90deg);
+}
+
+.more-projects .accordion {
+  border-radius: 10px;
+  height: 40rem;
+  width: 70%;
+  background: #b7b2dc30;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+  flex-wrap: wrap;
+  overflow: auto;
+  padding-left: auto;
+  padding-right: auto;
+}
+
+.more-projects .accordion.hidden {
+  display: none;
+}
+
+/* individual project card */
+.mini-card {
+  width: 40%;
+  position: relative;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.1) -3px -3px 12px;
+}
+
+.mini-card:hover .mini-overlay {
+  top: 0;
+}
+
+.mini-overlay {
+  position: absolute;
+  top: -100%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.703);
+  backdrop-filter: blur(3px);
+  z-index: 2;
+  transition: 0.5s ease-in-out;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.mini-content-container {
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.mini-content-container>p {
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+.mini-content-container .tech-container {
+  gap: 0.5rem;
+}
+
+.mini-content-container .tech-container p {
+  color: rgb(27, 32, 29);
+  font-size: 0.7vmax;
+  background: #bebadc;
+  padding: 0.2rem;
+  border-radius: 5px;
+}
+
+.mini-overlay h3 {
+  font-size: 1.2vw;
+  margin:0;
+}
+
+.mini-overlay p {
+  font-size: 1vw;
+}
+
+.mini-overlay button {
+  font-size: 0.7vw;
+}
+
+.mini-overlay button:hover {
+  background: #3c7d57;
+  color: #9de1cf;
+}
+
+.mini-cover {
+  width: 100%;
+  object-fit: cover;
+}
+
+i {
+  width: 40%;
+  height: 2rem;
+}
+
+
+
+
+
+
+
+

@@ -5,7 +5,7 @@ export default function Skills() {
     <div className='skills-container' id='skills'>
       <h1 className='portfolio-header'>Skills</h1>
       <div className='skill-cards-container'>
-        <img className='skill-bg' src={require('../../Assets/wave-haikei.png')}/>
+        {/* <img className='skill-bg' src={require('../../Assets/wave-haikei.png')}/> */}
         <div className='skill-card'>
           <h1>Front End</h1>
           <span>React</span>

@@ -6,7 +6,6 @@ export default function ScrollToHashElement() {
 
   let hashElement = useMemo(() => {
     let hash = location.hash;
-    // const removeHashCharacter = (hash : string) => hash.slice(1);
     if (hash) {
       return document.getElementById(hash.slice(1))
     } 
