@@ -10,8 +10,8 @@ type props = {
 
 export default function MoreProjects({ expand, toggleExpand, toggleHover, toggleFilled }: props) {
   const moreProjects = Object.keys(moreDetails).map(key => 
-    <div className='mini-card'>
-      <img className='mini-cover' src={require(`./${moreDetails[key].image}`)} key={key} alt='project preview'/>
+    <div className='mini-card' key={key}>
+      <img className='mini-cover' src={require(`./${moreDetails[key].image}`)} alt='project preview'/>
     </div>
   );
 
@@ -30,6 +30,7 @@ export default function MoreProjects({ expand, toggleExpand, toggleHover, toggle
       </div>
       <div className={`accordion ${!expand && 'hidden'}`}>
         {moreProjects}
+        <i aria-hidden='true'/>
       </div>
     </div>
   );
