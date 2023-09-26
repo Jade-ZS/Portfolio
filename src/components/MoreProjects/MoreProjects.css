@@ -48,17 +48,13 @@
   overflow: hidden;
 }
 
-/* .mini-card:hover {
-  filter: brightness(50%);
-} */
-
 .mini-card:hover .mini-overlay {
   top: 0;
 }
 
 .mini-overlay {
   position: absolute;
-  top: 100%;
+  top: -100%;
   left: 0;
   height: 100%;
   width: 100%;
