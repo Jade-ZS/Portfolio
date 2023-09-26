@@ -73,17 +73,34 @@
   padding: 1rem;
 }
 
+.mini-content-container>p {
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+.mini-content-container .tech-container {
+  gap: 0.5rem;
+}
+
+.mini-content-container .tech-container p {
+  color: rgb(27, 32, 29);
+  font-size: 0.7vmax;
+  background: #bebadc;
+  padding: 0.2rem;
+  border-radius: 5px;
+}
+
 .mini-overlay h3 {
-  font-size: 1.4vmax;
-  margin-top:0;
+  font-size: 1.2vw;
+  margin:0;
 }
 
 .mini-overlay p {
-  font-size: 1.1vmax;
+  font-size: 1vw;
 }
 
 .mini-overlay button {
-  font-size: 0.7vmax;
+  font-size: 0.7vw;
 }
 
 .mini-cover {

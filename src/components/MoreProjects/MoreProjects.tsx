@@ -15,6 +15,9 @@ export default function MoreProjects({ expand, toggleExpand, toggleHover, toggle
       <div className='mini-overlay'>
         <div className='mini-content-container'>
           <h3>{key}</h3>
+          <div className='tech-container'>
+            {moreDetails[key].technologies.map(tech => <p key={tech}>{tech}</p>)}
+          </div>
           <p>{moreDetails[key].description}</p>
           <div className='buttons-to-app'>
             <a href={moreDetails[key].github} target='blank'><button>CODE REPOSITORY</button></a>

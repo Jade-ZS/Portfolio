@@ -68,7 +68,7 @@
   flex-wrap: wrap;
 }
 
-.tech-container p {
+.project-detail .tech-container p {
   color: #221663;
   font-size: 0.9rem;
   padding: 0.5rem;
