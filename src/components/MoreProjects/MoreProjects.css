@@ -44,10 +44,27 @@
 /* individual project card */
 .mini-card {
   width: 40%;
+  position: relative;
+  overflow: hidden;
 }
 
 .mini-card:hover {
   filter: brightness(50%);
+}
+
+.mini-card:hover .mini-overlay {
+  top: 0;
+}
+
+.mini-overlay {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0);
+  backdrop-filter: blur(3px);
+  z-index: 2;
 }
 
 .mini-cover {

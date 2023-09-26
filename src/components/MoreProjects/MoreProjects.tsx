@@ -12,6 +12,9 @@ export default function MoreProjects({ expand, toggleExpand, toggleHover, toggle
   const moreProjects = Object.keys(moreDetails).map(key => 
     <div className='mini-card' key={key}>
       <img className='mini-cover' src={require(`./${moreDetails[key].image}`)} alt='project preview'/>
+      <div className='mini-overlay'>
+   
+      </div>
     </div>
   );
 
