@@ -7,10 +7,11 @@
 
 .home {
   width: 70%;
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 .intro-container {
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   gap: 20%;
@@ -19,17 +20,17 @@
 }
 
 .intro-left {
-  /* width: 30%; */
   flex-direction: column;
 }
 
 .intro-right {
   height: 90%;
 }
+
 .profile {
-  /* width: 30%; */
-  height: 90%;
-  border-radius: 20px;
+  height: 30%;
+  /* border-radius: 50%; */
+  border-radius: 49% 51% 47% 53% / 57% 37% 63% 43% ;
   object-fit: cover;
 }
 
