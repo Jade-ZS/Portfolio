@@ -3,6 +3,7 @@ import './Skills.css';
 export default function Skills() {
   return (
     <div className='skills-container' id='skills'>
+      {/* <img style={{zIndex: 0, position: 'absolute', height: '100%', width:'100%'}} src={require('../../Assets/blur.png')}/> */}
       <h1 className='portfolio-header'>Skills</h1>
       <div className='skill-cards-container'>
         <div className='skill-card'>

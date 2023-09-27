@@ -20,7 +20,7 @@ export default function Home() {
             <Link to='/'><GmailIcon /></Link>
           </div>
         </div>
-        <img className='profile intro-right' alt='profile image' src={require('../../Assets/profile.JPG')}/>
+        <img className='profile intro-right' alt='profile image' src={require('../../Assets/profile.JPG')} />
       </div>
     </div>
   );

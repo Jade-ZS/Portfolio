@@ -5,20 +5,29 @@
   display: flex;
 }
 
+.home {
+  width: 70%;
+  height: 100vh;
+}
+
 .intro-container {
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   gap: 20%;
   margin-top: 4rem;
+  width: 100%;
 }
 
 .intro-left {
-  width: 30%;
+  /* width: 30%; */
   flex-direction: column;
 }
 
+.intro-right {
+  height: 90%;
+}
 .profile {
-  width: 30%;
+  /* width: 30%; */
   height: 90%;
   border-radius: 20px;
   object-fit: cover;
