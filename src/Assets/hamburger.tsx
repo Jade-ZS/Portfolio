@@ -1,5 +1,5 @@
 export const hamburger = (
-  <svg className='hamburger' style={{height: '2rem', width: '2rem'}} viewBox="0 0 100 100" width="250" id="menu">
+  <svg fill='var(--line-color)' className='hamburger' style={{height: '2rem', width: '2rem'}} viewBox="0 0 100 100" width="250" id="menu">
         <rect 
           className='line top' 
           width="80" height="10" 

@@ -5,13 +5,11 @@ import Projects from '../Projects/Projects';
 import GithubIcon from '../Icons/GithubIcon';
 import GmailIcon from '../Icons/GmailIcon';
 import LinkedInIcon from '../Icons/LinkedInIcon';
-import { hamburger } from '../../Assets/hamburger';
 
 export default function Home() {
 
   return (
     <div className='home'>
-      <div className='hamburger-container' aria-controls='primary-navigation' aria-expanded='false'>{hamburger}</div>
       <div className='intro-container'>
         <img className='profile' alt='profile image' src={require('../../Assets/profile.JPG')} />
         <div className='intro-bottom'>

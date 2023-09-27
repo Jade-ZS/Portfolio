@@ -10,7 +10,7 @@ import ScrollToHashElement from "../ScrollToHashElement";
 function App() {
   return (
     <div className='App'>
-      {/* {<NavBar/ >} */}
+      {<NavBar/ >}
       <Home />
       <ScrollToHashElement />
       <Routes>
