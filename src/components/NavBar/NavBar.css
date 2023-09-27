@@ -79,5 +79,43 @@ a {
   --line-color: black;
 }
 
+.hamburger .line {
+  transition: 
+    rotate 300ms ease-in,
+    y 300ms ease-in 300ms,
+    opacity 0ms 300ms, 
+  ;
+  transform-origin: center;
+}
+
+.hamburger:hover .line {
+  transition: 
+    y 300ms ease-in,
+    rotate 300ms ease-in 300ms,
+    opacity 0ms 300ms, 
+  ;
+}
+
+.hamburger-container:hover :is(.top, .bottom) {
+  y: 45;
+}
+
+.hamburger-container:hover .top {
+  rotate: 45deg;
+}
+
+.hamburger-container:hover .middle {
+  opacity: 0;
+}
+
+.hamburger-container:hover .bottom {
+  rotate: -45deg;
+}
+
+.hamburger-container[aria-expanded='true'] .top {
+  x: 45;
+}
+
+
 
 
