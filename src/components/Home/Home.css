@@ -38,3 +38,7 @@
   gap: 0.5rem;
 }
 
+.hamburger {
+  position: absolute;
+  right: 0;
+}
