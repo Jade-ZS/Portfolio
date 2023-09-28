@@ -70,7 +70,7 @@
 
 .project-detail .tech-container p {
   color: #221663;
-  font-size: 0.9rem;
+  font-size: 0.9vmax;
   padding: 0.5rem;
   margin-right: 0.5rem;
   margin-bottom: 0;
@@ -88,6 +88,7 @@
   border: none;
   padding: 0.5rem;
   font-weight: bold;
+  font-size: 1vmax;
   color: rgb(33, 55, 44);
 }
 
