@@ -162,6 +162,11 @@
 
   .image-container {
     order: -1;
+    width: 80%;
+  }
+
+  .content-container {
+    width: 80%;
   }
 
   .main-img {
