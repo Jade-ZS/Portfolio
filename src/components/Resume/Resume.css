@@ -1,11 +1,9 @@
 .resume {
-  padding-top: 4rem;
   height: 50vh;
   position: relative;
   width: 70%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
