@@ -5,7 +5,6 @@ import Home from '../Home/Home';
 import Portfolio from '../Portfolio/Portfolio';
 
 function App() {
-  const [show, setShow] = useState(false);
 
   return (
     <div className='App'>

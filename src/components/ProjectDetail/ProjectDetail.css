@@ -70,7 +70,7 @@
 
 .project-detail .tech-container p {
   color: #221663;
-  font-size: 0.9rem;
+  font-size: 0.9vmax;
   padding: 0.5rem;
   margin-right: 0.5rem;
   margin-bottom: 0;
@@ -88,6 +88,7 @@
   border: none;
   padding: 0.5rem;
   font-weight: bold;
+  font-size: 1vmax;
   color: rgb(33, 55, 44);
 }
 
@@ -146,4 +147,28 @@
 .image-slider .clicked,
 .portrait-slider .clicked {
   border: solid 3px rgb(144, 21, 245);
+}
+
+@media (max-width: 848px) {
+  .project-detail {
+   width: 70vw;
+   height: 50vh;
+   object-fit: cover;
+   flex-direction: column;
+   overflow: scroll;
+   padding-top: 10rem;
+   margin-top: -1rem;
+  }
+
+  .image-container {
+    order: -1;
+  }
+
+  .main-img {
+    display: none;
+  }
+
+  .portraitGif {
+    margin-left: 30%;
+  }
 }

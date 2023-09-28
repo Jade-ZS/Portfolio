@@ -32,7 +32,7 @@ export default function ProjectCard({ imgName, projectName, description, detail 
             <h4>{expand ? 'HIDE' : 'READ'} DETAILS</h4>
             <img className={`arrow-icon ${(expand && 'flipped')}`} src={require('../../Assets/down-arrow-double.png')} alt='arrow'/>
           </div>
-          <a href={detail.github} target='blank'>{githubMark('#ffffff')}</a>
+          <a className='github-mark' href={detail.github} target='blank'>{githubMark('#ffffff')}</a>
         </div>
       </div>
     </div>
