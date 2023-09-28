@@ -4,13 +4,11 @@ import { NavLink, useLocation } from 'react-router-dom';
 import { downArrow } from '../../Assets/down-arrow';
 import { hamburger } from '../../Assets/hamburger';
 
-export default function NavBar() {
-  const { pathname } = useLocation();
-  const [show, setShow] = useState(false);
+export default function NavBar({show, setShow} : {show: boolean, setShow: any}) {
 
   return (
     <div
-      className='dropdown'
+      className={`dropdown ${show && 'show'}`}
       onMouseEnter={() => setShow(true)}
       onMouseLeave={() => setShow(false)}
     >
@@ -31,7 +29,4 @@ export default function NavBar() {
     </div>
   );
 
-  // return (
-  //   <div className='hamburger-container' aria-controls='primary-navigation' aria-expanded='false'>{hamburger}</div>
-  // );
 }

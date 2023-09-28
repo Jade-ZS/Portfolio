@@ -8,7 +8,6 @@ export default function Portfolio() {
   
   return (
     <div className='portfolio-container'>
-      {/* <img className='wave-bg' src={require('../../Assets/wave-haikei.png')}/> */}
       <Skills />
       <Projects />
       <Resume />

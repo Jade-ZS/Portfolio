@@ -1,5 +1,5 @@
 import './App.css';
-import React from 'react'
+import React, {useState} from 'react'
 import { Routes, Route } from 'react-router-dom';
 import NavBar from '../NavBar/NavBar';
 import Home from '../Home/Home';
@@ -8,11 +8,13 @@ import Story from '../Story/Story';
 import ScrollToHashElement from "../ScrollToHashElement";
 
 function App() {
+  const [show, setShow] = useState(false);
+
   return (
     <div className='App'>
-      {<NavBar/ >}
+      <ScrollToHashElement show={show}/>
+      <NavBar show={show} setShow={setShow}/>
       <Home />
-      <ScrollToHashElement />
       <Routes>
         <Route path='/'>
           <Route  index element={<Home/>}/>
