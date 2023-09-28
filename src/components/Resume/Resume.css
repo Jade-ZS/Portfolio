@@ -1,7 +1,18 @@
 .resume {
   padding-top: 4rem;
-  /* padding-bottom: 5rem; */
   height: 50vh;
+  position: relative;
+}
+
+/* .resume .illustration {
+  height: 40vh;
+  position: absolute;
+  left: 20%;
+  bottom: 20%;
+} */
+
+.resume .illustration {
+  height: 40vh;
 }
 
 .resume-button-container {
@@ -10,10 +21,12 @@
   margin-right: auto;
   margin-top: 2rem;
   display: flex;
+  align-items: center;
   gap: 2rem;
 }
 
 .resume-button-container a {
+  height: fit-content;
   display: flex;
   align-items: center;
   justify-content: center;
