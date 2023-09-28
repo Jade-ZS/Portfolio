@@ -6,7 +6,7 @@
 }
 
 .more-projects .expand-bar {
-  width: 70%;
+  width: 100%;
   display: flex;
   justify-content: flex-end;
   margin-right: 10%;
@@ -25,7 +25,7 @@
 .more-projects .accordion {
   border-radius: 10px;
   height: 40rem;
-  width: 70%;
+  width: 100%;
   background: #b7b2dc30;
   display: flex;
   justify-content: center;
