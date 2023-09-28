@@ -3,7 +3,7 @@ import './Skills.css';
 export default function Skills() {
   return (
     <div className='skills-container' id='skills'>
-      <h1 className='portfolio-header'>Skills</h1>
+      {/* <h1 className='portfolio-header'>Skills</h1> */}
       <div className='skill-cards-container'>
         <div className='skill-card'>
           <div className='skill-icon-container'>

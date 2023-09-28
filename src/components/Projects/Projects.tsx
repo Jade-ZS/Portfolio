@@ -25,7 +25,6 @@ export default function Projects() {
 
   return (
     <div className='projects-container' id='projects'>
-      <div style={{ height: '2rem' }} />
       <h1 className='portfolio-header'>Projects</h1>
       <ProjectCard
         projectName='Outfit Forecast'

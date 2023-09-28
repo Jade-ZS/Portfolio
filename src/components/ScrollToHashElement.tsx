@@ -1,7 +1,7 @@
 import { useMemo, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 
-export default function ScrollToHashElement() {
+export default function ScrollToHashElement({show} : {show : boolean}) {
   let location = useLocation();
 
   let hashElement = useMemo(() => {
@@ -9,7 +9,7 @@ export default function ScrollToHashElement() {
     if (hash) {
       return document.getElementById(hash.slice(1))
     } 
-  }, [location]);
+  }, [location, show]);
 
   useEffect(() => {
     if(hashElement) {
