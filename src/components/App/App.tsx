@@ -12,15 +12,11 @@ function App() {
 
   return (
     <div className='App'>
-      <ScrollToHashElement show={show}/>
-      <NavBar show={show} setShow={setShow}/>
+      {/* <ScrollToHashElement show={show}/>
+      <NavBar show={show} setShow={setShow}/> */}
       <Home />
       <Routes>
-        <Route path='/'>
-          <Route  index element={<Home/>}/>
-          <Route path='portfolio' element={<Portfolio />}/>
-          <Route path='story' element={<Story />}/>
-        </Route>
+        <Route path='/' element={<Portfolio />}/>
       </Routes>
     </div>
   );
