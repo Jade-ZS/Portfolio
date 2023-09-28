@@ -112,9 +112,6 @@ a {
   rotate: -45deg;
 }
 
-.hamburger-container[aria-expanded='true'] .top {
-  x: 45;
-}
 
 
 
