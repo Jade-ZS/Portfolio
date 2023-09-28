@@ -82,7 +82,24 @@
   transform: rotate(180deg);
 }
 
+@media (max-width: 848px) {
+  .featured-project-bg, 
+  .overlay {
+   width: 70vw;
+   height: 50vh;
+   object-fit: cover;
+   border-radius: 20px;
+  }
 
+  .logo-text,
+  .github-mark {
+    display: none;
+  }
+
+  .skill-card {
+    width: 60vw;
+  }
+}
 
 
 
