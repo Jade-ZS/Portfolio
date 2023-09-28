@@ -47,3 +47,10 @@
 .resume p {
   margin: 0;
 }
+
+@media (max-width: 848px) {
+  .resume {
+    flex-direction: column;
+    padding-bottom: 20rem;
+  }
+}
