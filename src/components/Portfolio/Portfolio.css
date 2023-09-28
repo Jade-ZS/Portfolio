@@ -1,5 +1,10 @@
 .portfolio-container {
   background: #F8F9FC;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
 }
 
 .portfolio-header {
