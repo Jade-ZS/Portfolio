@@ -1,11 +1,8 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import './Home.css';
-import Projects from '../Projects/Projects';
 import GithubIcon from '../Icons/GithubIcon';
 import GmailIcon from '../Icons/GmailIcon';
 import LinkedInIcon from '../Icons/LinkedInIcon';
-import { downArrow } from '../../Assets/down-arrow'
 
 export default function Home() {
 
