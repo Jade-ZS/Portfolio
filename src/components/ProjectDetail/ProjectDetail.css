@@ -157,7 +157,6 @@
    flex-direction: column;
    overflow: scroll;
    padding-top: 10rem;
-   margin-top: -1rem;
   }
 
   .image-container {
@@ -170,6 +169,10 @@
   }
 
   .main-img {
+    display: none;
+  }
+
+  .portrait-slider {
     display: none;
   }
 

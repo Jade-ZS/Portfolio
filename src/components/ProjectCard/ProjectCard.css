@@ -86,9 +86,9 @@
   .featured-project-bg, 
   .overlay {
    width: 70vw;
-   height: 50vh;
+   height: 35vh;
    object-fit: cover;
-   border-radius: 20px;
+   border-radius: 2px;
   }
 
   .logo-text,
