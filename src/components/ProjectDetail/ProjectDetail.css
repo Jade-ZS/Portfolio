@@ -70,7 +70,7 @@
 
 .project-detail .tech-container p {
   color: #221663;
-  font-size: 0.9vmax;
+  font-size: clamp(9px, 0.9vmax, 1.2rem);
   padding: 0.5rem;
   margin-right: 0.5rem;
   margin-bottom: 0;
@@ -88,7 +88,7 @@
   border: none;
   padding: 0.5rem;
   font-weight: bold;
-  font-size: 1vmax;
+  font-size: clamp(10px, 1vmax, 1rem);
   color: rgb(33, 55, 44);
 }
 
@@ -157,14 +157,22 @@
    flex-direction: column;
    overflow: scroll;
    padding-top: 10rem;
-   margin-top: -1rem;
   }
 
   .image-container {
     order: -1;
+    width: 80%;
+  }
+
+  .content-container {
+    width: 80%;
   }
 
   .main-img {
+    display: none;
+  }
+
+  .portrait-slider {
     display: none;
   }
 
