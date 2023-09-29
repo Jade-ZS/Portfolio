@@ -24,11 +24,11 @@ h3 {
 }
 
 h4 {
-  font-size: clamp(12px, 1.1vmax, 1.1rem);
+  font-size: clamp(13px, 1.1vmax, 1.1rem);
 }
 
 p, span {
-  font-size: clamp(12px, 1vmax, 1rem);
+  font-size: clamp(13px, 1vmax, 1rem);
 }
 
 

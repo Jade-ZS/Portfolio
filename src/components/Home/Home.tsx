@@ -15,7 +15,7 @@ export default function Home() {
           <p>I'm a dedicated <span>front-end</span> and <span>software developer</span> with a passion for blending technology, design, and power of AI!
             Before coming into the world of tech, I was a legal professional working closely with tech start-ups and multinational companies.
             As a first-generation immigrant, I've embraced the opportunities that come with cultural diversity and multilingualism.
-            I believe that with the transformative power of technology, we can pave the way for a more just and equitable world.
+            I believe that with the transformative power of technology, we can pave the way for a more just and equitable world!
           </p>
           <div className='contacts-box'>
             <a href='https://www.linkedin.com/in/ziyu-jade-shi/' target='blank'><LinkedInIcon /></a>
