@@ -7,7 +7,7 @@ export const moreDetails : MoreDetails = {
     image: 'moreImages/cookin-home.png',
     description: 'This application allows users to view, save, search, and rate recipes from an assortment of various recipes.',
     github: 'https://github.com/Jade-ZS/whats-cookin',
-    deployment: '',
+    deployment: 'https://sakisandrac.github.io/whats-cookin-sc/',
   },
   'Rock Paper Scissors': {
     type: 'Solo Project',
