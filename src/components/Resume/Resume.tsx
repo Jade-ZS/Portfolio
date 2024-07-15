@@ -4,7 +4,7 @@ export default function Experience() {
   return (
     <div className='resume' id='resume'>
       <img className='illustration' src='https://illustrations.popsy.co/purple/student-going-to-school.svg' alt='student-raising-hand' />
-      <a className='view-resume-button' target='blank' href='https://drive.google.com/file/d/1oDQRNW_OSkG0EixDvABJI0e5RtIlxYlT/view?usp=sharing'>
+      <a className='view-resume-button' target='blank' href='https://drive.google.com/file/d/1jeP-BJZpkFffZ-jcD073SdhJXGxpL1Rf/view?usp=sharing'>
         <img src={require('../../Assets/view.png')} />
         <p>View Resume</p>
       </a>
