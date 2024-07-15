@@ -22,7 +22,7 @@ export default function Skills() {
         <h1>Front End</h1>
         <h3>Languages/Frameworks:</h3>
         <span>JavaScript, HTML, CSS</span>
-        <span>React, React Native, TypeScript</span>
+        <span>React, React Native, Angular, TypeScript</span>
         <h3>User Interface:</h3>
         <span>Progressive Web Application</span>
         <span>Assessibility Practices</span>
